@@ -12,7 +12,7 @@ Below you can find important links for PlotSquared.
 
 * [Download PlotSquared](https://www.spigotmc.org/resources/77506/)
 * [Discord](https://discord.gg/intellectualsites)
-* [Wiki](https://github.com/IntellectualSites/PlotSquared/wiki)
+* [Wiki](https://github.com/IntellectualSites/PlotSquared-Documentation/wiki)
 * [Issues & Feature](https://github.com/IntellectualSites/PlotSquared/issues)
 * [Translations](https://intellectualsites.crowdin.com/plotsquared/)
 
@@ -20,3 +20,4 @@ Below you can find important links for PlotSquared.
 * [API Documentation](https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/API-Documentation)
 * [Event API](https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Events)
 * [Flag API](https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/API-Flag)
+* [JavaDocs](https://ci.athion.net/job/PlotSquared-v5-Javadocs/)
