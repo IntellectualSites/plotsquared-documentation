@@ -52,7 +52,7 @@ dependencies {
 
 === Maven - PlotSquared Core
 
-[source, xml, subs="attributes"]
+[source, xml, subs="attributes, verbatim"]
 ----
 <dependency>
     <groupId>com.plotsquared</groupId>
@@ -64,27 +64,29 @@ dependencies {
 
 === Maven - PlotSquared Core and Bukkit
 
-[source, xml, subs="attributes"]
+[source, xml, subs="attributes, verbatim"]
 ----
-<dependency>
-    <groupId>com.plotsquared</groupId>
-    <artifactId>PlotSquared-Core</artifactId>
-    <version>{latestVersion}</version>
-    <scope>provided</scope>
-</dependency>
+<dependencies>
+    <dependency>
+        <groupId>com.plotsquared</groupId>
+        <artifactId>PlotSquared-Core</artifactId>
+        <version>{latestVersion}</version>
+        <scope>provided</scope>
+    </dependency>
 
-<dependency>
-    <groupId>com.plotsquared</groupId>
-    <artifactId>PlotSquared-Bukkit</artifactId>
-    <version>{latestVersion}</version>
-    <scope>provided</scope>
-    <exclusions>
-        <exclusion>
-            <artifactId>PlotSquared-Core</artifactId>
-            <groupId>*</groupId>
-        </exclusion>
-    </exclusions>
-</dependency>
+    <dependency>
+        <groupId>com.plotsquared</groupId>
+        <artifactId>PlotSquared-Bukkit</artifactId>
+        <version>{latestVersion}</version>
+        <scope>provided</scope>
+        <exclusions>
+            <exclusion>
+                <artifactId>PlotSquared-Core</artifactId>
+                <groupId>*</groupId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+</dependencies>
 ----
 
 === Useful classes for PlotSquared
