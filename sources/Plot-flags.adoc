@@ -1,0 +1,352 @@
+= Plot flags
+:toc: left
+:toclevels: 2
+:icons: font
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+== Introduction
+
+The extensive flagging system allows you to do all sorts of things such as setting the plot weather.
+
+Setting a flag is easy, just use `/plot flag set <flag> <value>`. For a boolean flag, the value would either be 'true' or 'false'.
+
+== Flag List
+
+To bring up a list of flags use `/plot flag list`. These values are clickable, and clicking a flag name will show you information about that particular flag. You can also use `/plot flag info <flag>` directly, if you already know the flag name.
+
+image::https://i.imgur.com/uTPjJEE.png[Flag system]
+
+== Default Plot and Road Flags
+
+You can set default flags per world in the `plugins/PlotSquared/config/worlds.yml`. Default flags will be present in each claimed plot unless a different value is manually set for that plot.
+
+The following is an *example* of setting the `use` flag to allow interaction with doors, and trapdoors, levers, gates, pressure plates, buttons and trip wires:
+
+[,YML]
+----
+worlds:
+  <world>:
+    [...]
+    flags:
+      use: "oak_door,iron_trapdoor,lever,acacia_fence_gate,light_weighted_pressure_plate,oak_button,tripwire"
+      pvp: true
+----
+
+_`<world>` indicates the name of that plotworld._
+
+You can use xref:Vanilla-Tags.adoc[Vanilla block tags] too.
+
+The same works for road flags.
+
+*Example:*
+
+[,YML]
+----
+worlds:
+  <world>:
+    [...]
+    road:
+      [...]
+      flags:
+        use: "oak_door,iron_trapdoor,lever,acacia_fence_gate,light_weighted_pressure_plate,oak_button,tripwire"
+        pvp: true
+----
+
+_`<world>` indicates the name of that plotworld._
+
+== Flag types
+
+=== Boolean
+
+Accepts `true` or `false`.
+
+== Miscellaneous
+
+Accepts commands with multiple parameters, e.g `/gamemode creative`.
+
+=== Timed
+
+A binary tuple of numbers e.g. `53 6` or `7 93`.
+
+=== BlockTypeList
+
+A list of blocks, supporting both legacy numerical IDs and new string IDs e.g.
+
+* `grass_block` for grass blocks
+* `7` for bedrock
+* `7,3` for bedrock and dirt
+* `35:14,35:15` for red and black wool
+
+These flags also support xref:Vanilla-Tags.adoc[vanilla-tags], like:
+
+* `#signs` for all sign types
+* `#buttons` for all button types
+
+=== Enum
+
+Accepts a predefined collection of values.
+
+=== Double
+
+Accepts any decimal number (all real numbers),
+
+=== TeleportDeny
+
+Accepts the follow plot membership `trusted`, `members`, `nonmembers`, `nontrusted` and `nonowners`.
+
+=== Integer
+
+Accepts all integers.
+
+=== Internal
+
+Flags used internally.
+
+== Flag Permissions
+
+=== Basic Permission Schema
+
+To give a player access to a flag, you need to assign the following permissions, and exchange the value if wanted:
+
+* `plots.set.flag`
+* `plots.flag`
+* `plots.flag.add`
+* `plots.flag.remove`
+
+[TIP]
+Also you can assign xref:permission/Permission-Packs.adoc#_plots_permpack_basicflags[`plots.permpack.basicflags`] to cover the following permissions and lots of the basic flags.
+
+=== Flag specific permission
+
+`plots.set.flag.<name>.*` (e.g. `plots.set.flag.fly.*`)
+The asterisk covers the values of the flag, if it's a boolean flag you cover `true` and `false`, if it's a Long flag you cover all positive numbers and so on. Make sure to decide whether you need it or not.
+
+== Terminology
+
+The following tables contain phrases covering certain stances of plot member inheritance and flag states. We will explain the phrases used below.
+
+* Player: The player, as in user of the server.
+* Guest: Person who is not added to the plot (https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Plot-Membership-Tiers[tiers]).
+* False: The flag intended behavior is not enabled by default.
+* True: The flag intended behavior is enabled by default.
+* None: The flag intended behavior is not set by default.
+* Infinity: The flag is not bound to an amount and allows infinite types of the flag.
+* Null: The flag intended behavior cannot be set outside of the API.
+* Empty: The flag variable is empty and won't appear to the user.
+* Not Buyable: The flag variable is not set, therefore the plot is not buyable.
+* Disabled: The flag variable is not set, therefore the intended behavior is not defined.
+
+== Entity Categories
+
+Flags such as mob caps, interaction flags, etc, make use of entity categories. PlotSquared divides entities in the following categories:
+
+* *animal:* cod donkey squid skeleton_horse mule trader_llama parrot zombie_horse cow horse bee polar_bear pufferfish cat bat salmon fox pig llama iron_golem turtle tropical_fish sheep snow_golem mooshroom ocelot dolphin chicken wolf panda rabbit
+* *hostile:* blaze pillager skeleton giant elder_guardian zombie_pigman end_crystal ravager ghast guardian vindicator magma_cube spider creeper wither evoker slime illusioner phantom witch wither_skeleton husk ender_dragon cave_spider stray enderman silverfish endermite vex zombie drowned zombie_villager, shulker
+* *villager:* villager wandering_trader
+* *vehicle:* spawner_minecart donkey pig llama furnace_minecart skeleton_horse mule hopper_minecart trader_llama zombie_horse tnt_minecart boat chest_minecart horse command_block_minecart minecart
+* *player:* player
+* *projectile:* ender_pearl dragon_fireball fireball wither_skull llama_spit fishing_bobber experience_bottle egg arrow small_fireball
+snowball spectral_arrow shulker_bullet potion trident
+* *tameable:* cat trader_llama parrot zombie_horse donkey wolf llama horse skeleton_horse mule
+* *hanging:* item_frame leash_knot painting
+* *other:* dragon_fireball tnt experience_orb lightning_bolt fireball wither_skull area_effect_cloud evoker_fangs eye_of_ender armor_stand small_fireball firework_rocket falling_block item
+
+== Flags
+
+=== Boolean
+
+[width="99%",cols="38%,50%,12%",options="header",]
+|===
+|Name |Description |Default Value
+|redstone |Set to `false` to disable redstone in the plot. |True
+
+|fly |Set to `true` to enable flight within the plot. |False
+
+|chat |Set to `false` to prevent plot chat on the plot. |False
+
+|notify-leave |Set to `true` to notify the plot owners when someone
+leaves the plot. |False
+
+|notify-enter |Set to `true` to notify the plot owners when someone
+enters the plot. |False
+
+|hide-info |Set to `true` to hide plot information. |False
+
+|server-plot |Set to `true` to turn the plot into a server plot. This is
+equivalent to setting the server as the plot owner. |False
+
+|explosion |Set to `true` to allow explosions inside a plot. |False
+
+|grass-grow |Set to `false` to disable grass to grow within the plot.
+|True
+
+|vine-grow |Set to `false` to disable vines to grow within the plot.
+|True
+
+|mycel-grow |Set to `false` to disable mycelium to grow in the plot.
+|True
+
+|kelp-grow |Set to `false` to disable kelp to grow in the plot. |True
+
+|instabreak |Set to `true` to allow blocks to be instantaneously broken
+in survival mode. |False
+
+|disable-physics |Set to `true` to disable block physics in the plot.
+|False
+
+|liquid-flow |Set to `false` to disable liquid flowing. |True
+
+|snow-melt |Set to `true` to allow snow to melt within the plot. |True
+
+|snow-form |Set to `false` to disallow snow to form within the plot.
+|False
+
+|ice-melt |Set to `true` to allow ice to melt in the plot. |False
+
+|ice-form |Set to `true` to allow ice to form in the plot. |False
+
+|block-burn |Set to `true` to allow blocks to burn within the plot.
+|False
+
+|block-ignition |Set to `false` to disallow blocks to ignite within the
+plot. |True
+
+|soil-dry |Set to `true` to allow soil to dry within the plot. |False
+
+|coral-dry |Set to `true` to allow corals to dry within the plot. |False
+
+|device-interact |Set to `true` to allow devices to be interacted with
+in the plot. |False
+
+|vehicle-break |Set to `true` to allow guests to break vehicles in the
+plot. |False
+
+|vehicle-place |Set to `true` to allow guests to place vehicles in the
+plot. |False
+
+|vehicle-use |Set to `true` to allow guests to use vehicles in the plot.
+Applies to the following entity categories: vehicle |False
+
+|hanging-break |Set to `true` to allow guests to break hanging objects
+in the plot. Applies to the following entity categories: hanging |False
+
+|hanging-place |Set to `true` to allow guests to hang objects in the
+plot. |False
+
+|misc-place |Set to `true` to allow guests to place miscellaneous items.
+|False
+
+|misc-break |Set to `true` to allow guests to break miscellaneous items.
+Applies to the following entity categories: armorstands |False
+
+|misc-interact |Set to `true` to allow guests to interact with
+miscellaneous items. Applies to the following entit |
+|===
+
+=== Miscellaneous
+
+[width="99%",cols="38%,50%,12%",options="header",]
+|===
+|Name |Description |Default Value
+|blocked-cmds |A list of commands that are blocked in the plot. |None
+|gamemode |Determines the gamemode in the plot. |None
+|guest-gamemode |Determines the guest gamemode in the plot. |None
+|plot-title |Display a custom message when someone enters the plot |None
+|===
+
+=== Timed
+
+[width="99%",cols="38%,50%,12%",options="header",]
+|===
+|Name |Description |Default Value
+|feed |Specify an interval in seconds and an optional amount by which
+the players will be fed (amount is 0 by default = vanilla-regeneration).
+|None
+
+|heal |Specify an interval in seconds and an optional amount by which
+the players will be healed (amount is 0 by default =
+vanilla-regeneration). |None
+|===
+
+=== BlockTypeList
+
+[width="99%",cols="38%,50%,12%",options="header",]
+|===
+|Name |Description |Default Value
+|use |Define a list of materials players should be able to interact with
+in the plot even when they aren’t added to the plot. |None
+
+|break |Define a list of materials players should be able to break in
+the plot even when they aren’t added to the plot. |None
+
+|place |Define a list of materials players should be able to place in
+the plot even when they aren’t added to the plot. |None
+|===
+
+=== Enum
+
+[width="99%",cols="38%,50%,12%",options="header",]
+|===
+|Name |Description |Default Value
+|weather |Specifies the simulated weather inside of the plot. This
+hasn’t an effet of weather dependend game mechanics. |None
+
+|deny-teleport |Deny a certain group from teleporting to the plot.
+Available groups: members, nonmembers, trusted, nontrusted, nonowners
+|None
+
+|titles |Set to `true` to allow the plot title when someone enters the
+plot. |None
+
+|music |Set to a music disk ID (item name) to play the music disc. |None
+|===
+
+=== Double
+
+|===
+|Name |Description |Default Value
+|price |If set a plot can be bought for this price using `/plot buy`.
+Requires economy to be enabled and lists plots under
+`/plots list forsale`. |Not Buyable
+|===
+
+=== Integer
+
+[width="99%",cols="38%,50%,12%",options="header",]
+|===
+|Name |Description |Default Value
+|misc-cap |Set to an integer value to limit the amount of miscellaneous
+entities on the plot. Applies to the following entity categories:
+projectile, other, hanging |Infinity
+
+|entity-cap |Set to an integer value to limit the amount of entities on
+the plot. |Infinity
+
+|mob-cap |Set to an integer value to limit the amount of mobs on the
+plot. Applies to the following entity categories: animal, villager,
+tameable, hostile |Infinity
+
+|animal-cap |Set to an integer value to limit the amount of animals on
+the plot. Applies to the following entity categories: animal, villager,
+tameable |Infinity
+
+|hostile-cap |Set to an integer value to limit the amount of hostile
+entities on the plot. Applies to the following entity categories:
+hostile |Infinity
+
+|vehicle-cap |Set to an integer value to limit the amount of vehicles on
+the plot. Applies to the following entity categories: vehicle |Infinity
+
+|time |Specifies the simulated time inside of the plot. This hasn’t an
+effet of time dependend game mechanics. |Disabled
+|===
+
+=== Internal
+
+[width="99%",cols="38%,50%,12%",options="header",]
+|===
+|Name |Description |Default Value
+|done |Mark a plot as done. |Null
+|analysis |A multi purpose debug analysis flag. |Null
+|===

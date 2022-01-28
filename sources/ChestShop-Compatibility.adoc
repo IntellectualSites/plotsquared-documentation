@@ -1,0 +1,29 @@
+= ChestShop Compatibility
+:toc: left
+:toclevels: 2
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+== Usage
+
+The follow steps applies to the *SignShop Plugin* and *any plugin which uses signs*:
+
+. Open your `/plugins/PlotSquared/settings/worlds.yml` file.
+. Find your plotworld. (If you use ChestShop in more than one then apply the following changes to all of those worlds)
+. Change the following from this:
++
+[,YAML]
+----
+ flags: {}
+----
++
+to this:
++
+[,YAML]
+----
+ flags:
+   use: '#signs'
+----
+
+. This will let players interact with all types and states of signs.
+. Then use `/plot reload`

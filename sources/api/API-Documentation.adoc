@@ -1,0 +1,134 @@
+= API Documentation
+:sectnums:
+:toc: left
+:toclevels: 3
+:icons: font
+
+:latestVersion: 6.4.0
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+== Maven & Gradle Examples
+
+* Core Module Javadocs: https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/index.html
+* Bukkit Javadocs: https://javadoc.io/doc/com.plotsquared/PlotSquared-Bukkit/latest/index.html
+* Aggregated Javadocs: https://ci.athion.net/job/PlotSquared-v6-Javadocs/javadoc/
+
+[TIP]
+Gradle is the recommended when working with the PlotSquared API. Ensure the https://docs.gradle.org/current/userguide/toolchains.html[toolchain] points to Java 17 or higher.
+
+[NOTE]
+If you are looking for snapshots, add the repository of S01 OSS Sonatype to the repositories' block.
+
+=== Gradle - PlotSquared Core
+
+If you need to access the Bukkit module of PlotSquared, copy the example below.
+
+[source, kotlin, subs="attributes"]
+----
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly("com.plotsquared:PlotSquared-Core:{latestVersion}")
+}
+----
+
+=== Gradle - PlotSquared Core and Bukkit
+
+[,kotlin, subs="attributes"]
+----
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly("com.plotsquared:PlotSquared-Core:{latestVersion}") // PlotSquared Core API
+    compileOnly("com.plotsquared:PlotSquared-Bukkit:{latestVersion}") { isTransitive = false } // PlotSquared Bukkit API
+}
+----
+
+=== Maven - PlotSquared Core
+
+[source,xml, subs="attributes"]
+----
+<dependency>
+    <groupId>com.plotsquared</groupId>
+    <artifactId>PlotSquared-Core</artifactId>
+    <version>{latestVersion}</version>
+    <scope>provided</scope>
+</dependency>
+----
+
+=== Maven - PlotSquared Core and Bukkit
+
+[source,xml, subs="attributes"]
+----
+<!-- PlotSquared Core API -->
+<dependency>
+    <groupId>com.plotsquared</groupId>
+    <artifactId>PlotSquared-Core</artifactId>
+    <version>{latestVersion}</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- PlotSquared Bukkit API -->
+<dependency>
+    <groupId>com.plotsquared</groupId>
+    <artifactId>PlotSquared-Bukkit</artifactId>
+    <version>{latestVersion}</version>
+    <scope>provided</scope>
+    <exclusions>
+        <exclusion>
+            <artifactId>PlotSquared-Core</artifactId>
+            <groupId>*</groupId>
+        </exclusion>
+    </exclusions>
+</dependency>
+----
+
+=== Useful classes for PlotSquared
+
+* https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/PlotAPI.java[PlotAPI]
+* https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/player/PlotPlayer.java[PlotPlayer]
+* https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/plot/flag/FlagContainer.java[FlagContainer]
+* https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/util/SchematicHandler.java[SchematicHandler]
+* https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/util/ChunkManager.java[ChunkManager]
+* https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/uuid/UUIDPipeline.java[UUIDPipeline]
+
+== Tutorials
+
+* xref:Event-API.adoc#_getting_an_instance[Getting an instance of PlotSquared]
+* xref:API-Flag.adoc[Flag API]
+* xref:Event-API.adoc[Event API]
+
+[TIP]
+If you have made a tutorial, or an addon for PlotSquared, and want us to link it here, please create an issue. We'd really appreciate it!
+
+== Terminology
+
+=== Plot area
+
+A plot area is any area that PlotSquared will manage/handle. If this is an infinite plot world, the entire world is considered to be a plot area. If you use plot clusters, then only part of the world will be a plot area, and anything outside this area will not be handled by PlotSquared.
+
+See: https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/plot/world/PlotAreaManager.java[PlotAreaManager.java]#getPlotAreaByString(...)
+
+=== Clusters
+
+Clusters can be created within existing plot areas, or they can be created in a previously non-plot world, which will in turn create it's own plot area.
+
+See: https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/plot/PlotCluster.java[PlotCluster.java]
+See: https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/PlotSquared.java[PlotSquared.java]
+
+=== Road
+
+A road is what separates each plot, and includes the wall around each plot. Attempting to get a plot at this location will return null.
+
+See: https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/location/Location.java[Location.java]#isPlotRoad(...)
+
+=== Plot
+
+A plot can be claimed or unclaimed. Getting a plot at a location where one isn't claimed will return a new unowned plot object.
+
+See: https://github.com/IntellectualSites/PlotSquared/blob/v6/Core/src/main/java/com/plotsquared/core/plot/PlotArea.java[PlotArea.java]#getPlots(...)
