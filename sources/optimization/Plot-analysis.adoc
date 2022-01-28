@@ -2,6 +2,7 @@
 :toc: left
 :toclevels: 2
 :icons: font
+
 ===== xref:../README.adoc[🏠 Return to the index]
 
 == Introduction
@@ -20,7 +21,7 @@ _Please note that there is also auto calibration (see below)_
 
 In the `settings.yml` there is a section for auto clearing:
 
-[,YAML]
+[source, YAML]
 ----
 clear:
   auto:
@@ -58,7 +59,7 @@ A column is the entire vertical space for a block. e.g. If you are standing on a
 
 If you want for instance to clear any plot that had less than 7 blocks changed per column, you would do the following `+(note that 7 -> 700 for the threshold and is the same for each calibration parameter)+`:
 
-[,YAML]
+[source, YAML]
 ----
 clear:
   auto:

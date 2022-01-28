@@ -3,7 +3,7 @@
 :toclevels: 2
 :icons: font
 
-===== xref:../README.adoc[🏠 Return to the index]
+===== xref:README.adoc[🏠 Return to the index]
 
 == Introduction
 

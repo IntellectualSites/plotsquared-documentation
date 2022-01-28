@@ -14,9 +14,9 @@ For more information regarding block buckets, visit xref:../Block-Bucket.adoc[th
 
 *Located in:* `/plugins/PlotSquared/config/worlds.yml`
 
-== Example
+== Default
 
-[,yaml]
+[source, yaml]
 ----
 configuration_version: v5
 worlds:

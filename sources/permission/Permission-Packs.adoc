@@ -11,9 +11,9 @@
 
 Permission packs are pre-selected, bundled permissions helping server managers to assign a package rather 30+ unique nodes.
 
-* <<plotspermpackbasic,Basic Permission Pack>>: `plots.permpack.basic`
-* <<plotspermpackbasicflags,Basic Flag Pack>>: `plots.permpack.basicflags`
-* <<plotspermpackbasicinbox,Basic Inbox Pack>>: `plots.permpack.basicinbox`
+* <<_plots_permpack_basic, Basic permission pack>>: `plots.permpack.basic`
+* <<_plots_permpack_basicflags,Basic Flag Pack>>: `plots.permpack.basicflags`
+* <<_plots_permpack_basicinbox,Basic Inbox Pack>>: `plots.permpack.basicinbox`
 
 == Included Permissions
 

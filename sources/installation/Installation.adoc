@@ -57,7 +57,7 @@ image::https://i.imgur.com/6kAMx34.png[]
 
 * Find the following line:
 +
-[,properties]
+[source, properties]
 ----
 level-name=world
 ----
@@ -65,7 +65,7 @@ level-name=world
 * Replace `world` with the name of your plot world. In this example case, we would need to name it to `plotworld`.
 So it looks like this:
 +
-[,properties]
+[source, properties]
 ----
 level-name=plotworld
 ----
@@ -75,7 +75,7 @@ level-name=plotworld
 
 * The value we are going to edit does not exist in the file yet, so we need to add this at the bottom of the file:
 +
-[,yaml]
+[source, yaml]
 ----
 worlds:
 plotworld:
@@ -108,7 +108,7 @@ Sometimes PlotSquared will be unable to switch the generators for your plotworld
 
 Open the `bukkit.yml` file (located in your server's root folder) and change the generator while the server is *stopped* using the following format:
 
-[,yaml]
+[source, yaml]
 ----
 worlds:
   plotworld:

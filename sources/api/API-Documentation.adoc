@@ -37,21 +37,21 @@ dependencies {
 
 === Gradle - PlotSquared Core and Bukkit
 
-[,kotlin, subs="attributes"]
+[source, kotlin, subs="attributes"]
 ----
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compileOnly("com.plotsquared:PlotSquared-Core:{latestVersion}") // PlotSquared Core API
-    compileOnly("com.plotsquared:PlotSquared-Bukkit:{latestVersion}") { isTransitive = false } // PlotSquared Bukkit API
+    compileOnly("com.plotsquared:PlotSquared-Core:{latestVersion}")
+    compileOnly("com.plotsquared:PlotSquared-Bukkit:{latestVersion}") { isTransitive = false }
 }
 ----
 
 === Maven - PlotSquared Core
 
-[source,xml, subs="attributes"]
+[source, xml, subs="attributes"]
 ----
 <dependency>
     <groupId>com.plotsquared</groupId>
@@ -63,9 +63,8 @@ dependencies {
 
 === Maven - PlotSquared Core and Bukkit
 
-[source,xml, subs="attributes"]
+[source, xml, subs="attributes"]
 ----
-<!-- PlotSquared Core API -->
 <dependency>
     <groupId>com.plotsquared</groupId>
     <artifactId>PlotSquared-Core</artifactId>
@@ -73,7 +72,6 @@ dependencies {
     <scope>provided</scope>
 </dependency>
 
-<!-- PlotSquared Bukkit API -->
 <dependency>
     <groupId>com.plotsquared</groupId>
     <artifactId>PlotSquared-Bukkit</artifactId>

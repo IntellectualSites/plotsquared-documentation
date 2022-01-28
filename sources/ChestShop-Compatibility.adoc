@@ -2,7 +2,7 @@
 :toc: left
 :toclevels: 2
 
-===== xref:../README.adoc[🏠 Return to the index]
+===== xref:README.adoc[🏠 Return to the index]
 
 == Usage
 
@@ -12,14 +12,14 @@ The follow steps applies to the *SignShop Plugin* and *any plugin which uses sig
 . Find your plotworld. (If you use ChestShop in more than one then apply the following changes to all of those worlds)
 . Change the following from this:
 +
-[,YAML]
+[source, YAML]
 ----
  flags: {}
 ----
 +
 to this:
 +
-[,YAML]
+[source, YAML]
 ----
  flags:
    use: '#signs'

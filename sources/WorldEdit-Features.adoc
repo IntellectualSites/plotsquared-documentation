@@ -1,10 +1,9 @@
-= WorldEdit features
-
+= WorldEdit & FastAsyncWorldEdit features
 :toc: left
 :toclevels:
 :icons: font
 
-===== xref:../README.adoc[🏠 Return to the index]
+===== xref:README.adoc[🏠 Return to the index]
 
 [TIP]
 If you want to make other aspects of WorldEdit async as well, you could consider installing https://www.spigotmc.org/resources/fast-async-worldedit.13932[FasAsyncWorldEdit]. All permissions to allow FAWE in plots, you found link:/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Permissions[here].
@@ -16,9 +15,9 @@ PlotSquared offers several options related to WorldEdit. By default it will do t
 * Limits the max iterations with several brushes so people can't crash the server
 * Limits the max volume to 50 million
 
-The bypass permission is `plots.worldedit.bypass`, the use `/plot toggle worldedit` or `/plot wea`
+The bypass permission is `plots.worldedit.bypass`, the use `/plot toggle worldedit`.
 
 To further extend this, PlotSquared comes with a WE processor you can enable:
 
 * Limits max blockstates and entities with editing (enable chunk-processor)
-* Faster and async WorldEdit changes (enable experimental-fast-async-worldedit) (bypass this with `/plot wea`)
+* Faster and async WorldEdit changes (enable experimental-fast-async-worldedit) (bypass this with `/plot toggle worldedit`)

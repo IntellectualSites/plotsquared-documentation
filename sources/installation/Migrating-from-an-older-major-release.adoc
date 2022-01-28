@@ -14,10 +14,10 @@
 If you are using PlotSqaured version 4 or older, please read the following steps carefully in order to upgrade successfully to v5 or newer. Keep in mind you need to update additional dependencies, such as WorldEdit, Fawe or the server itself as well while updating PlotSquared in order to let P2 function properly.
 Each major release contains its own migration handler, PlotSquared will attempt to upgrade its own files. Schematics can't be updated and need to be redone.
 
-* <<migrating-from-plotme,Migrating from PlotMe>>
-* <<migrating-from-plotsquared-v3,Migrating from v3>>
-* <<migrating-from-plotsquared-v4,Migrating from v4>>
-* <<migrating-from-plotsquared-v5,Migrating from v5>>
+* <<_migrating_from_plotme>>
+* <<_migrating_from_plotsquared_v3>>
+* <<_migrating_from_plotsquared_v4>>
+* <<_migrating_from_plotsquared_v5>>
 
 === Migrating from PlotMe:
 

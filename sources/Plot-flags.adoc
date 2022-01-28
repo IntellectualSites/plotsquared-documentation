@@ -3,7 +3,7 @@
 :toclevels: 2
 :icons: font
 
-===== xref:../README.adoc[🏠 Return to the index]
+===== xref:README.adoc[🏠 Return to the index]
 
 == Introduction
 
@@ -23,7 +23,7 @@ You can set default flags per world in the `plugins/PlotSquared/config/worlds.ym
 
 The following is an *example* of setting the `use` flag to allow interaction with doors, and trapdoors, levers, gates, pressure plates, buttons and trip wires:
 
-[,YML]
+[source, YAML]
 ----
 worlds:
   <world>:
@@ -41,7 +41,7 @@ The same works for road flags.
 
 *Example:*
 
-[,YML]
+[source, YAML]
 ----
 worlds:
   <world>:

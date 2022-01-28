@@ -37,7 +37,7 @@ Configuration is done through the `settings.yml`
 
 To enable the chunk processor, set the following:
 
-[,YAML]
+[source, YAML]
 ----
 enabled-components:
   # Processes chunks (trimming, or entity/tile limits)
@@ -46,7 +46,7 @@ enabled-components:
 
 It can then be configured further, changing these values:
 
-[,YAML]
+[source, YAML]
 ----
 chunk-processor:
   # Auto trim will not save chunks which aren't claimed

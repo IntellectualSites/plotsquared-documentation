@@ -1,4 +1,4 @@
-= Settings.yml
+= settings.yml
 :toc: left
 :toclevels: 2
 
@@ -10,11 +10,11 @@ This is the main settings file for PlotSquared.
 
 *Located in:* `/plugins/PlotSquared/config/settings.yml`
 
-== Example
+== Default
 
 //TODO update links in settings.yml
 
-[,yaml]
+[source, yaml]
 ----
 # This value is not configurable. It shows the platform you are using.
 platform: "Bukkit"

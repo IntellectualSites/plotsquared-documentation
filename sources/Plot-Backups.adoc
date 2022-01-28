@@ -3,7 +3,7 @@
 :toclevels: 2
 :icons: font
 
-===== xref:../README.adoc[🏠 Return to the index]
+===== xref:README.adoc[🏠 Return to the index]
 
 == Introduction
 
@@ -23,7 +23,7 @@ The backup system currently only stores blocks inside of the plot, and will not 
 
 The settings can be found in PlotSquared's `settings.yml` file.
 
-[,yaml]
+[source, yaml]
 ----
 # Backup related settings
 backup:

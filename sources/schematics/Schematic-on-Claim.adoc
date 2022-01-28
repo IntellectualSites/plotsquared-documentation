@@ -1,5 +1,4 @@
 = Schematic on claim
-:sectnums:
 :toc: left
 :toclevels: 2
 :icons: font
@@ -16,7 +15,7 @@ To have a schematic pasted on a plot when the plot is claimed you need to:
 
 Now you have a working schematic file. To have it paste on claim you'll need to configure your `worlds.yml`, here is a simple snippet explaining how to do that.
 
-[,YAML]
+[source, YAML]
 ----
 # The following is a slice from the plotworld settings, change this for each plotworld
 schematic:
@@ -29,7 +28,7 @@ schematic:
 
 and in `settings.yml`, add/update the following:
 
-[,yaml]
+[source, yaml]
 ----
 # Schematic Settings
 schematics:
@@ -40,4 +39,4 @@ schematics:
 You can use the same schematic for more than one plotworld.
 
 [TIP]
-If you activated the "specify_on_claim" option in the world.yml the user can define a plot-schematic with the claim-command.
+If you activated the `specify_on_claim` option in the worlds.yml the user can define a plot-schematic with the claim-command.

@@ -25,7 +25,7 @@ For the PlaceholderAPI placeholders of PlotSquared you don't need to download a 
 
 Placeholders can be turned off in `settings.yml`:
 
-[,YAML]
+[source, YAML]
 ----
   external-placeholders: false
 ----
