@@ -1,11 +1,10 @@
 = ChestShop Compatibility
-:sectnums:
 :toc: left
 :toclevels: 2
 
-:icons: font
+===== xref:../README.adoc[🏠 Return to the index]
 
-== Introduction
+== Usage
 
 The follow steps applies to the *SignShop Plugin* and *any plugin which uses signs*:
 

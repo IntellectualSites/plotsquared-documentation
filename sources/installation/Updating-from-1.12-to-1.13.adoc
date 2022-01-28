@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 2
 
+===== xref:../README.adoc[🏠 Return to the index]
+
 == Updating to 1.13
 
 If you are updating to 1.13 you might have to manually change some things.
@@ -13,8 +15,7 @@ Please note that PlotSquared for 1.13 only supports Bukkit at the moment.
 === Schematics
 
 PlotSquared will not update your schematics, so you might have to do that manually.
-The new version of PlotSquared introduced a format for configuring blocks for the different plot components. You can read more about that https://github.com/IntellectualCrafters/PlotSquared/wiki/BlockBucket[here]. This
-//TODO update link
+The new version of PlotSquared introduced a format for configuring blocks for the different plot components. You can read more about that xref:../Block-Bucket.adoc[here]. This
 change allows you to use multiple block types in every plot component.
 
 === Dependencies

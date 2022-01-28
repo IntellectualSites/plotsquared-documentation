@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 2
 
+===== xref:../README.adoc[🏠 Return to the index]
+
 == Introduction
 
 The `/plot set` command allows you to configure various components of your plot. These include:
@@ -49,12 +51,10 @@ This allows you to update various parts of the plot. The components that exist a
 
 Each component has a separate permission node, namely `plots.set.<component>`, and they share the syntax `/plot set <component> <pattern>`.
 
-This is a powerful system as it allows you to use the power of https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/BlockBucket[BlockBuckets] to define block-patterns.
-//TODO update link
+This is a powerful system as it allows you to use the power of xref:../Block-Bucket.adoc[BlockBuckets] to define block-patterns.
 
 == Disallowed blocks
 
-Version v5.11.0 introduced a new safety measure to prevent unsafe blocks from being used in plot components. This was a feature in early version 4 releases, but was removed in favour of the WorldEdit block blacklist. The settings file (settings.yml) now contains a list of blacklisted blocks (https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/settings.yml[these] by default). To override the
-//TODO update link
-blacklist, give yourself the permission node 'plots.admin.unsafe'.
+Version v5.11.0 introduced a new safety measure to prevent unsafe blocks from being used in plot components. This was a feature in early version 4 releases, but was removed in favour of the WorldEdit block blacklist. The settings file (settings.yml) now contains a list of blacklisted blocks (xref:../configuration/settings.yml.adoc[these] by default). To override the
+blacklist, give yourself the permission node `plots.admin.unsafe`.
 

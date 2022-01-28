@@ -2,13 +2,13 @@
 :toc: left
 :toclevels: 2
 
+===== xref:../README.adoc[🏠 Return to the index]
 
 == Introduction
 
 PlotSquared works with the following tiers of memberships to define the different behaviors / permissions / restrictions for minecraft events, plot flags, commands etc.
 
-The member ties are one of the main part of PlotSquared by self. It's not usable for LuckPerms, but other plugins can check the membership tier for a player for a specific plot with the link:/IntellectualSites/PlotSquared-Documentation/wiki/API-Documentation[PlotSquared API]. No configurations
-//TODO update link
+The member ties are one of the main part of PlotSquared by self. It's not usable for LuckPerms, but other plugins can check the membership tier for a player for a specific plot with the xref:api/API-Documentation.adoc[PlotSquared API]. No configurations
 needed here to have memberships.
 
 == Tiers

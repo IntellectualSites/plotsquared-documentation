@@ -3,6 +3,8 @@
 :toclevels: 2
 :icons: font
 
+===== xref:../README.adoc[🏠 Return to the index]
+
 == Speed
 
 * Async: clear plots more than 800 times faster than PlotMe
@@ -29,15 +31,13 @@
 == Looks
 
 * Add amazing roads schematics and plot schematics to existing worlds
-* Easily change the message color scheme link:/IntellectualSites/PlotSquared-Documentation/wiki/style.yml[style.yml]
+* Easily change the message color scheme
 * Titles (entry notifications)
-* Per plot time / weather / music via link:IntellectualSites/PlotSquared-Documentation/wiki/Plot-flags[plot
-//TODO update links
-flags]
+* Per plot time / weather / music via xref:Plot-flags.adoc[plot flags]
 
 == Support
 
-* Support for Minecraft 1.13.2 to 1.16.5 and higher
+* Support for Minecraft 1.13.2 to 1.18.2 and higher
 * Works with offline-mode servers
 * https://intellectualsites.crowdin.com/plotsquared[Community Translations]
 * fast https://discord.gg/intellectualsites[Discord] support

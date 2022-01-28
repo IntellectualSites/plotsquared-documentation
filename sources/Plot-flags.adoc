@@ -3,6 +3,8 @@
 :toclevels: 2
 :icons: font
 
+===== xref:../README.adoc[🏠 Return to the index]
+
 == Introduction
 
 The extensive flagging system allows you to do all sorts of things such as setting the plot weather.
@@ -33,7 +35,7 @@ worlds:
 
 _`<world>` indicates the name of that plotworld._
 
-//TODO you can work with block tags here too
+You can use xref:Vanilla-Tags.adoc[Vanilla block tags] too.
 
 The same works for road flags.
 
@@ -76,8 +78,7 @@ A list of blocks, supporting both legacy numerical IDs and new string IDs e.g.
 * `7,3` for bedrock and dirt
 * `35:14,35:15` for red and black wool
 
-These flags also support https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Vanilla-Tags[vanilla-tags], like:
-//TODO update link
+These flags also support xref:Vanilla-Tags.adoc[vanilla-tags], like:
 
 * `#signs` for all sign types
 * `#buttons` for all button types
@@ -113,8 +114,8 @@ To give a player access to a flag, you need to assign the following permissions,
 * `plots.flag.add`
 * `plots.flag.remove`
 
-TIP: Also you can assign https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Permission-Packs#plotspermpackbasicflags[`plots.permpack.basicflags`] to cover the following permissions and lots of the basic flags.
-//TODO link
+[TIP]
+Also you can assign xref:permission/Permission-Packs.adoc#_plots_permpack_basicflags[`plots.permpack.basicflags`] to cover the following permissions and lots of the basic flags.
 
 === Flag specific permission
 

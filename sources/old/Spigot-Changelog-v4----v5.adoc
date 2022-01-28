@@ -1,8 +1,9 @@
 = Spigot Changelog from v4 and v5
-:sectnums:
 :toc: left
 :toclevels: 2
 :icons: font
+
+===== xref:../README.adoc[🏠 Return to the index]
 
 == New PlotSquared features since 5.1+
 

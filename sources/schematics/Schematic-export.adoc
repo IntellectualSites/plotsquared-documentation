@@ -1,7 +1,8 @@
 = Schematic export
 :toc: left
 :toclevels: 2
-:sectnums:
+
+===== xref:../README.adoc[🏠 Return to the index]
 
 == Step 1: Choosing a directory
 

@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 2
 
+===== xref:../README.adoc[🏠 Return to the index]
+
 == Introduction
 
 This is the main database settings file for PlotSquared.

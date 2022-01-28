@@ -3,6 +3,7 @@
 :toclevels: 2
 :icons: font
 
+===== xref:../README.adoc[🏠 Return to the index]
 == Introduction
 
 All commands start with `/plot` if not configured else wise.
@@ -16,24 +17,23 @@ PlotSquared have an amount of commands for different uses. At here you find the 
 
 command-categories:
 
-//TODO update links
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#basics[Basics]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#info[Info]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#teleport[Teleport]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#chat[Chat]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#claiming[Claiming]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#settings[Settings]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#schematic[Schematic]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#rating[Rating]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#administration[Administration]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#debug[Debug]
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Commands#other-permissions[Other permissions]
+* <<_basics>>
+* <<_info>>
+* <<_teleport>>
+* <<_chat>>
+* <<_claiming>>
+* <<_settings>>
+* <<_schematic>>
+* <<_rating>>
+* <<_administration>>
+* <<_debug>>
+* <<_other_permissions>>
 
 [NOTE]
 If a command or permission contains the `Secondary` description, it means that a command supports several sub-commands or has several purposes. Furthermore, permissions with `.admin` contain administrative overrides.
 
-//TODO links
-TIP: You can checkout our https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Permission-Packs[permission-packs] to avoid redundant permission assignments.
+[TIP]
+You can check out our xref:permission/Permission-Packs.adoc[permission-packs] to avoid redundant permission assignments.
 
 == Basics
 

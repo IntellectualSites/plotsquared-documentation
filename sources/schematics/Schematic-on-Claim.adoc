@@ -2,8 +2,10 @@
 :sectnums:
 :toc: left
 :toclevels: 2
-
 :icons: font
+
+[descrete]
+===== xref:../README.adoc[🏠 Return to the index]
 
 == Setup
 

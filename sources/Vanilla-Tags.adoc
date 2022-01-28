@@ -1,6 +1,8 @@
 = Vanilla Tags
 :toc: left
-:toclevels: 2
+:toclevels: 1
+
+===== xref:../README.adoc[🏠 Return to the index]
 
 == What are "Tags" ?
 

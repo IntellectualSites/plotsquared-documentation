@@ -2,16 +2,17 @@
 :sectnums:
 :toc: left
 :toclevels: 2
-
 :icons: font
+
+[descrete]
+===== xref:../README.adoc[🏠 Return to the index]
 
 == Initial Setup
 
 . https://www.spigotmc.org/resources/77506/[Download the plugin]
 . Put "PlotSquared-Bukkit-6.x.jar" into your `plugins` folder
 . If you don't have it installed already, https://dev.bukkit.org/projects/worldedit/files[WorldEdit 7.2.x or higher] or https://www.spigotmc.org/resources/fast-async-worldedit.13932/[FAWE] is required.
-. If you are updating from a previous major release, such as v3, v4 or v5, read https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Migrating-from-an-older-major-release[this] page first.
-// TODO Update link
+. If you are updating from a previous major release, such as v3, v4 or v5, read xref:Migrating-from-an-older-major-release.adoc[this] page first.
 . Reboot the server and PlotSquared will generate all necessary files.
 
 [NOTE]
@@ -42,8 +43,7 @@ If you don't have a MySQL database, storage will be automatically set to "SQLite
 
 == Plot Setup
 
-You can now create the plotworld or setup single plots in an existing world. To do the latter, head over https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Single-Plot-Area[here].
-//TODO update link
+You can now create the plotworld or setup single plots in an existing world. To do the latter, head over xref:../customization/Single-Plot-Area.adoc[here].
 
 === Setup for a default world
 
@@ -155,13 +155,10 @@ If all is well, you can begin regenerating the roads in the entire map. Open up 
 
 Allow to generate a plotworld with a custom schematic in all plots.
 
-*Instruction:* link:/IntellectualSites/PlotSquared-Documentation/wiki/Schematic-Generation[here]
-//TODO Update link
+*Instruction:* xref:../schematics/Schematic-Generation.adoc[here]
 
 === Plot Schematic on Claim
 
 The player get a custom plot schematic with a claim. If you wish, the player can define a plot-schematic with the claim-command.
 
-*Instruction:* link:/IntellectualSites/PlotSquared-Documentation/wiki/Schematic-on-Claim[here]
-//TODO Update link
-
+*Instruction:* xref:../schematics/Schematic-on-Claim.adoc[here]

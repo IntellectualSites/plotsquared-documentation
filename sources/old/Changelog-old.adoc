@@ -3,6 +3,8 @@
 :toclevels: 2
 :icons: font
 
+===== xref:../README.adoc[🏠 Return to the index]
+
 == Introduction
 
 New changelogs can be obtained on the Releases tab on GitHub.
@@ -11,8 +13,7 @@ Direct links to versions:
 
 == v4 to v5:
 
-* https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Spigot-Changelog-v4----v5[Click here]
-//TODO update link
+* xref:Spigot-Changelog-v4----v5.adoc[Click here]
 
 == V5:
 
