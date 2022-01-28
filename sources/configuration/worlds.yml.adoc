@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
+:source-language: YAML
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
@@ -16,7 +18,7 @@ For more information regarding block buckets, visit xref:../Block-Bucket.adoc[th
 
 == Default
 
-[source, yaml]
+[source]
 ----
 configuration_version: v5
 worlds:

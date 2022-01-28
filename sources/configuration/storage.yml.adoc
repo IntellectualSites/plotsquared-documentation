@@ -1,6 +1,8 @@
 = storage.yml
 :toc: left
 :toclevels: 2
+:source-highlighter: coderay
+:source-language: YAML
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
@@ -13,7 +15,7 @@ If you are using SQLite, the `storage.db` is located in `/plugins/PlotSquared/st
 
 == Default
 
-[source, YAML]
+[source]
 ----
 prefix: ''
 

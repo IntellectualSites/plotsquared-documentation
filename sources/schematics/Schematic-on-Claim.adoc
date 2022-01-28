@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
+:source-language: YAML
 
 [descrete]
 ===== xref:../README.adoc[🏠 Return to the index]
@@ -15,7 +17,7 @@ To have a schematic pasted on a plot when the plot is claimed you need to:
 
 Now you have a working schematic file. To have it paste on claim you'll need to configure your `worlds.yml`, here is a simple snippet explaining how to do that.
 
-[source, YAML]
+[source]
 ----
 # The following is a slice from the plotworld settings, change this for each plotworld
 schematic:
@@ -28,7 +30,7 @@ schematic:
 
 and in `settings.yml`, add/update the following:
 
-[source, yaml]
+[source]
 ----
 # Schematic Settings
 schematics:

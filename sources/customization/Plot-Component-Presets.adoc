@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
+:source-language: YAML
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
@@ -33,7 +35,7 @@ Presets are configured in the file `plugins/PlotSquared/settings/components.yml`
 
 Messages are styled using https://docs.adventure.kyori.net/minimessage.html[MiniMessage]. To preview the outcome, you can use a tool like https://webui.adventure.kyori.net/[MiniMessageViewer].
 
-[source, YAML]
+[source]
 ----
 presets:
   - component: floor

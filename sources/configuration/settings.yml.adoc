@@ -1,6 +1,8 @@
 = settings.yml
 :toc: left
 :toclevels: 2
+:source-highlighter: coderay
+:source-language: YAML
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
@@ -14,7 +16,7 @@ This is the main settings file for PlotSquared.
 
 //TODO update links in settings.yml
 
-[source, yaml]
+[source]
 ----
 # This value is not configurable. It shows the platform you are using.
 platform: "Bukkit"

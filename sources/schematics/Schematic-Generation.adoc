@@ -3,6 +3,8 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
+:source-language: YAML
 
 [descrete]
 ===== xref:../README.adoc[🏠 Return to the index]
@@ -23,7 +25,7 @@ In order to have a plot world generate with schematics do the following:
 . Move the created schematic from `/plugins/PlotSquared/schematics/` to `/plugins/PlotSquared/schematics/GEN_ROAD_SCHEMATIC/<world name>/` and rename it to `plot.schematic`/`plot.schem` (depending on the file extension of the schematic file you're moving)
 . In `settings.yml`, add/update the following:
 
-[source, yaml]
+[source]
 ----
 # Schematic Settings
 schematics:

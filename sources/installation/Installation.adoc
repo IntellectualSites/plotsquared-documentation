@@ -3,6 +3,7 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
 
 [descrete]
 ===== xref:../README.adoc[🏠 Return to the index]

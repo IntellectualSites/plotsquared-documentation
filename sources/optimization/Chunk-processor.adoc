@@ -3,6 +3,8 @@
 :toc: left
 :toclevels: 3
 :icons: font
+:source-highlighter: coderay
+:source-language: YAML
 
 [descrete]
 ===== xref:../README.adoc[🏠 Return to the index]
@@ -37,7 +39,7 @@ Configuration is done through the `settings.yml`
 
 To enable the chunk processor, set the following:
 
-[source, YAML]
+[source]
 ----
 enabled-components:
   # Processes chunks (trimming, or entity/tile limits)
@@ -46,7 +48,7 @@ enabled-components:
 
 It can then be configured further, changing these values:
 
-[source, YAML]
+[source]
 ----
 chunk-processor:
   # Auto trim will not save chunks which aren't claimed

@@ -3,6 +3,8 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
+:source-language: YAML
 
 [descrete]
 ===== xref:../README.adoc[🏠 Return to the index]
@@ -19,14 +21,14 @@ If you already have plots which are far away from the origin, the world border w
 
 In the `settings.yml` look for the following section
 
-[source, YAML]
+[source]
 ----
 # Expiry will clear old or simplistic plots
 enabled-components:
   plot-expiry: false
 ----
 
-[source, YAML]
+[source]
 ----
 # This is an auto clearing task called `task1`
 auto-clear:

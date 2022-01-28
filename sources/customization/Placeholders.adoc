@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
+:source-language: YAML
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
@@ -25,7 +27,7 @@ For the PlaceholderAPI placeholders of PlotSquared you don't need to download a 
 
 Placeholders can be turned off in `settings.yml`:
 
-[source, YAML]
+[source]
 ----
   external-placeholders: false
 ----

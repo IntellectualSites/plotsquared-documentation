@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
+:source-language: YAML
 
 ===== xref:README.adoc[🏠 Return to the index]
 
@@ -23,7 +25,7 @@ The backup system currently only stores blocks inside of the plot, and will not 
 
 The settings can be found in PlotSquared's `settings.yml` file.
 
-[source, yaml]
+[source]
 ----
 # Backup related settings
 backup:

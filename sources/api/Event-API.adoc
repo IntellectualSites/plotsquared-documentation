@@ -3,6 +3,8 @@
 :toc: left
 :toclevels: 2
 :icons: font
+:source-highlighter: coderay
+:source-language: Java
 
 [descrete]
 ===== xref:../README.adoc[🏠 Return to the index]
@@ -17,7 +19,7 @@ Events can be found link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core
 
 == Getting an instance
 
-[source, java]
+[source]
 ----
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -39,7 +41,7 @@ public class MyPlotPlugin extends JavaPlugin {
 
 Registering a listener is super easy. Add the `@Subscribe` (from the `com.google.common.eventbus` package) annotation to any methods that are listening to events, register the class with the EventBus through `PlotAPI#registerListener(Class)` and you're done! One example:
 
-[source, java]
+[source]
 ----
 public class P2Listener {
 

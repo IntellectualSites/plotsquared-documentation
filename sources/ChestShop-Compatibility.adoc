@@ -1,6 +1,8 @@
 = ChestShop Compatibility
 :toc: left
 :toclevels: 2
+:source-highlighter: coderay
+:source-language: YAML
 
 ===== xref:README.adoc[🏠 Return to the index]
 
@@ -12,14 +14,14 @@ The follow steps applies to the *SignShop Plugin* and *any plugin which uses sig
 . Find your plotworld. (If you use ChestShop in more than one then apply the following changes to all of those worlds)
 . Change the following from this:
 +
-[source, YAML]
+[source]
 ----
  flags: {}
 ----
 +
 to this:
 +
-[source, YAML]
+[source]
 ----
  flags:
    use: '#signs'
