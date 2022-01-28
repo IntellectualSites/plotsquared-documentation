@@ -12,7 +12,8 @@ Below you can find important links for PlotSquared.
 === Getting started
 Contributions are always welcome! Fork the repository and start editing the source files in the `sources/` directory. +
 If you are working with IntelliJ, install the https://plugins.jetbrains.com/plugin/7391-asciidoc[AsciiDoc] plugin to have a live preview while editing the files. +
-Other software, like https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[VisualStudio], has an AsciiDoc plugin as well.
+Other software, like https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[VisualStudio], has an AsciiDoc plugin as well. +
+Of course, you can use the GitHub editor to edit the files too or https://asciidoclive.com[AsciiDocLive] to paste your changes back later into the GitHub editor before committing.
 
 === AsciiDoctor newbies read here
 
