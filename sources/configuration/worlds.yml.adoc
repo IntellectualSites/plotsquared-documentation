@@ -136,6 +136,6 @@ worlds:
      type: 0
      terrain: 0
      plugin: PlotSquared
-    # Global plot flags, see: https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Plot-flags
+    # Global plot flags, see: https://intellectualsites.github.io/plotsquared-documentation/Plot-flags
     flags: {}
 ----

@@ -129,7 +129,7 @@ The asterisk covers the values of the flag, if it's a boolean flag you cover `tr
 The following tables contain phrases covering certain stances of plot member inheritance and flag states. We will explain the phrases used below.
 
 * Player: The player, as in user of the server.
-* Guest: Person who is not added to the plot (https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Plot-Membership-Tiers[tiers]).
+* Guest: Person who is not added to the plot (xref:Plot-Membership-Tiers.adoc[tiers]).
 * False: The flag intended behavior is not enabled by default.
 * True: The flag intended behavior is enabled by default.
 * None: The flag intended behavior is not set by default.

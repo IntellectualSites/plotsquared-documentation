@@ -39,8 +39,7 @@ auto-clear:
     days: 7
     worlds:
     - "*"
-    # See: https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Plot-analysis
-//TODO update link
+    # See: https://intellectualsites.github.io/plotsquared-documentation/optimization/Plot-analysis
     calibration:
       variety: 0
       variety-sd: 0

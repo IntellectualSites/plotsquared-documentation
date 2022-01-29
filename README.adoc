@@ -4,7 +4,7 @@ image::https://raw.githubusercontent.com/IntellectualSites/Assets/1d3749d591d492
 '''
 
 This is the documentation repository for PlotSquared.   
-Click on the link:https://intellectualsites.github.io/PlotSquared-Documentation/[here]  to get started.
+Click on the link:https://intellectualsites.github.io/plotsquared-documentation/[here]  to get started.
 Below you can find important links for PlotSquared.
 
 == Contribute

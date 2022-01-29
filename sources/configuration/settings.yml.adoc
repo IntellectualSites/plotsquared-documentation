@@ -14,8 +14,6 @@ This is the main settings file for PlotSquared.
 
 == Default
 
-//TODO update links in settings.yml
-
 [source]
 ----
 # This value is not configurable. It shows the platform you are using.
@@ -110,7 +108,7 @@ enabled-components:
   # Make road regeneration persistent across restarts
   persistent-road-regen: true
   # Enable the `/plot component` preset GUI
-  # Read more about components here: https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Plot-Components
+  # Read more about components here: https://intellectualsites.github.io/plotsquared-documentation/customization/Plot-Components
   component-presets: true
   # Enable per user locale
   per-user-locale: false
@@ -147,7 +145,7 @@ auto-clear:
     delete-if-owner-is-unknown: false
     worlds:
     - "*"
-    # See: https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Plot-analysis for a description of each value.
+    # See: https://intellectualsites.github.io/plotsquared-documentation/optimization/Plot-analysis for a description of each value.
     calibration:
       variety: 0
       variety-sd: 0
@@ -227,7 +225,7 @@ teleport:
   visit-merged-owners: true
 
 # Chunk processor related settings
-# See https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Chunk-processor for more information.
+# See https://intellectualsites.github.io/plotsquared-documentation/optimization/Chunk-processor for more information.
 chunk-processor:
   # Auto trim will not save chunks which aren't claimed
   auto-trim: false
@@ -338,7 +336,7 @@ confirmation:
   confirmation-timeout-seconds: 20
 
 # Backup related settings
-# See https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Backups for more information.
+# See https://intellectualsites.github.io/plotsquared-documentation/Plot-Backups for more information.
 backup:
   # Automatically backup plots when destructive commands are performed, e.g. /plot clear
   automatic-backups: true
@@ -384,7 +382,7 @@ arkitektonika:
   delete-url: "https://api.schematic.cloud/delete/{key}"
 
 # Schematic Settings
-# See https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Schematic-on-Claim for more information.
+# See https://intellectualsites.github.io/plotsquared-documentation/schematics/Schematic-on-Claim for more information.
 schematics:
   # Whether schematic based generation should paste schematic on top of plots, or from Y=1
   paste-on-top: true
@@ -417,7 +415,7 @@ general:
   # Always show explosion Particles, even if explosion flag is set to false
   always-show-explosions: false
   # Blocks that may not be used in plot components
-  # Checkout the wiki article regarding plot components before modifying: https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Plot-Components
+  # Checkout the wiki article regarding plot components before modifying: https://intellectualsites.github.io/plotsquared-documentation/customization/Plot-Components
   invalid-blocks:
   - "acacia_button"
   - "acacia_fence_gate"
