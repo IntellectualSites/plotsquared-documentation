@@ -42,7 +42,7 @@ That's it. The conversion is done.
 === Migrating from PlotSquared v4:
 
 . Get the latest PlotSquared v4 from https://www.spigotmc.org/resources/plotsquared-v4-v5-out-now.1177[here]. Replace your current version with v4 and launch the server. Ensure there are no errors or warnings and shut it down again. If you encounter errors or warnings read them carefully and do what they tell you to do. Ignoring them can lead to further issues down the line.
-. Get the latest PlotSquared v5 from https://www.spigotmc.org/resources/plotsquared-v6.77506/download?version=402158[here]. Replace PlotSquared v4 with v5 and launch the server. Same procedure here, check your log and ensure no warnings or errors occur. You may need to revisit `/plugins/PlotSquared/settings/worlds.yml` and perform material updates yourself. Versions prior to v5 weren't very smart in that aspect. Click {materialEnum}[here] for an up to date list of valid material names. Visit the article xref:Updating-from-1.12-to-1.13.adoc[Updating from 1.12 to 1.13] for further instructions.
+. Get the latest PlotSquared v5 from https://www.spigotmc.org/resources/plotsquared-v6.77506/download?version=402158[here]. Replace PlotSquared v4 with v5 and launch the server. Same procedure here, check your log and ensure no warnings or errors occur. You may need to revisit `/plugins/PlotSquared/settings/worlds.yml` and perform material updates yourself. Versions prior to v5 weren't very smart in that aspect. Click {materialEnum}[here] for an up to date list of valid material names. Visit the article xref:updating-from-1.12-to-1.13.adoc[Updating from 1.12 to 1.13] for further instructions.
 
 
 That's it. The conversion is done.
@@ -51,6 +51,6 @@ That's it. The conversion is done.
 
 . Get the latest PlotSquared v5 from https://www.spigotmc.org/resources/plotsquared-v6.77506/download?version=402158[here]. Replace your current version with v5 and launch the server. Ensure there are no errors or warnings and shut it down again. If you encounter errors or warnings read them carefully and do what they tell you to do. Ignoring them can lead to further issues down the line.
 . Get the latest PlotSquared v6 from https://www.spigotmc.org/resources/77506[here]. Replace PlotSquared v5 with v6 and launch the server. Same procedure here, check your log and ensure no warnings or errors occur.
-Read over the xref:../old/Changelog-old.adoc[Changelog for v6] carefully to make sure you don't forgot manual updates down the line.
+Read over the xref:../old/changelog-old.adoc[Changelog for v6] carefully to make sure you don't forgot manual updates down the line.
 
 That's it. The conversion is done.

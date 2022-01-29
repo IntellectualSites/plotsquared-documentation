@@ -39,7 +39,7 @@ auto-clear:
     days: 7
     worlds:
     - "*"
-    # See: https://intellectualsites.github.io/plotsquared-documentation/optimization/Plot-analysis
+    # See: https://intellectualsites.github.io/plotsquared-documentation/optimization/plot-analysis
     calibration:
       variety: 0
       variety-sd: 0
@@ -55,7 +55,7 @@ auto-clear:
 
 To enable Expire Manager, set `enabled` to true, and set the expiry delay in days. This clears and deletes plots where the owner has been inactive (i.e. not logged on) for the amount of days specified.
 
-For more *advanced plot clearing*, see the xref:Plot-analysis.adoc[plot analysis page].
+For more *advanced plot clearing*, see the xref:plot-analysis.adoc[plot analysis page].
 
 === Plot condensation (intensive)
 

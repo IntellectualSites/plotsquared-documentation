@@ -25,7 +25,7 @@ The components available - and the values you can use - are the same as those in
 * outline
 * border
 
-More information can be found here: xref:Plot-Components.adoc[Plot Components]
+More information can be found here: xref:plot-components.adoc[Plot Components]
 
 == Configuration
 
@@ -48,7 +48,7 @@ presets:
     permission: ''
 ----
 
-This is a powerful system as it allows you to use the power of xref:../Block-Bucket.adoc[BlockBuckets] to define block-patterns.
+This is a powerful system as it allows you to use the power of xref:../block-bucket.adoc[BlockBuckets] to define block-patterns.
 
 == Cost
 

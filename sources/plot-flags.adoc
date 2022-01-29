@@ -37,7 +37,7 @@ worlds:
 
 _`<world>` indicates the name of that plotworld._
 
-You can use xref:Vanilla-Tags.adoc[Vanilla block tags] too.
+You can use xref:vanilla-tags.adoc[Vanilla block tags] too.
 
 The same works for road flags.
 
@@ -80,7 +80,7 @@ A list of blocks, supporting both legacy numerical IDs and new string IDs e.g.
 * `7,3` for bedrock and dirt
 * `35:14,35:15` for red and black wool
 
-These flags also support xref:Vanilla-Tags.adoc[vanilla-tags], like:
+These flags also support xref:vanilla-tags.adoc[vanilla-tags], like:
 
 * `#signs` for all sign types
 * `#buttons` for all button types
@@ -117,7 +117,7 @@ To give a player access to a flag, you need to assign the following permissions,
 * `plots.flag.remove`
 
 [TIP]
-Also you can assign xref:permission/Permission-Packs.adoc#_plots_permpack_basicflags[`plots.permpack.basicflags`] to cover the following permissions and lots of the basic flags.
+Also you can assign xref:permission/permission-packs.adoc#_plots_permpack_basicflags[`plots.permpack.basicflags`] to cover the following permissions and lots of the basic flags.
 
 === Flag specific permission
 
@@ -129,7 +129,7 @@ The asterisk covers the values of the flag, if it's a boolean flag you cover `tr
 The following tables contain phrases covering certain stances of plot member inheritance and flag states. We will explain the phrases used below.
 
 * Player: The player, as in user of the server.
-* Guest: Person who is not added to the plot (xref:Plot-Membership-Tiers.adoc[tiers]).
+* Guest: Person who is not added to the plot (xref:plot-membership-tiers.adoc[tiers]).
 * False: The flag intended behavior is not enabled by default.
 * True: The flag intended behavior is enabled by default.
 * None: The flag intended behavior is not set by default.

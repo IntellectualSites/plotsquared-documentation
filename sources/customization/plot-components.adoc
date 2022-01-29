@@ -51,7 +51,7 @@ This allows you to update various parts of the plot. The components that exist a
 
 Each component has a separate permission node, namely `plots.set.<component>`, and they share the syntax `/plot set <component> <pattern>`.
 
-This is a powerful system as it allows you to use the power of xref:../Block-Bucket.adoc[BlockBuckets] to define block-patterns.
+This is a powerful system as it allows you to use the power of xref:../block-bucket.adoc[BlockBuckets] to define block-patterns.
 
 == Disallowed blocks
 

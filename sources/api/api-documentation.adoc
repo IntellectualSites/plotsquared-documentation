@@ -100,9 +100,9 @@ dependencies {
 
 == Tutorials
 
-* xref:Event-API.adoc#_getting_an_instance[Getting an instance of PlotSquared]
-* xref:API-Flag.adoc[Flag API]
-* xref:Event-API.adoc[Event API]
+* xref:event-api.adoc#_getting_an_instance[Getting an instance of PlotSquared]
+* xref:flag-api.adoc[Flag API]
+* xref:event-api.adoc[Event API]
 
 [TIP]
 If you have made a tutorial, or an addon for PlotSquared, and want us to link it here, please create an issue. We'd really appreciate it!
