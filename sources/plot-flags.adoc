@@ -156,7 +156,7 @@ Flags such as mob caps, interaction flags, etc, make use of entity categories. P
 snowball spectral_arrow shulker_bullet potion trident
 * *hanging:* item_frame leash_knot painting
 * *other:* dragon_fireball tnt experience_orb lightning_bolt fireball wither_skull area_effect_cloud evoker_fangs eye_of_ender armor_stand small_fireball firework_rocket falling_block item
-* *tameable:* cat trader_llama parrot zombie_horse donkey wolf llama horse skeleton_horse mule
+* *tamable:* cat trader_llama parrot zombie_horse donkey wolf llama horse skeleton_horse mule
 
 == Flags
 
