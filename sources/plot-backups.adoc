@@ -19,7 +19,7 @@ By default, the system will also create backups of the plot when certain potenti
 * Clearing the plot
 * Setting a plot component (floor, filling, etc)
 
-The backup system currently only stores blocks inside of the plot, and will not include things such as flags, settings, etc. The backup system uses plot schematics behind the scenes.
+The backup system currently only stores blocks inside the plot, and will not include things such as flags, settings, etc. The backup system uses plot schematics behind the scenes.
 
 == Configuration
 

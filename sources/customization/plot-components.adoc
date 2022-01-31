@@ -15,7 +15,7 @@ The `/plot set` command allows you to configure various components of your plot.
 * (Component) Blocks in the plot floor
 * (Component) Blocks in the area above the plot floor
 * (Component) All blocks in a plot
-* (Component) Blocks inside of the plot wall
+* (Component) Blocks inside the plot wall
 * (Component) Blocks in the plot border
 * (Component) Blocks in the area surrounding the plot
 * (Component) The block(s) in the middle of the plot
@@ -44,7 +44,7 @@ This allows you to update various parts of the plot. The components that exist a
 * `floor`: Blocks in the plot floor
 * `air`: Blocks in the area above the plot floor
 * `all`: All blocks in a plot
-* `wall`: Blocks inside of the plot wall
+* `wall`: Blocks inside of plot wall
 * `border`: Blocks in the plot border
 * `outline`: Blocks in the area surrounding the plot
 * `middle`: The block(s) in the middle of the plot
