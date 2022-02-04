@@ -9,10 +9,13 @@
 
 == Introduction
 
-Placeholder systems allow you to display data from PlotSquared in other plugins and allow you to display data of other plugins in PlotSquared.
+[NOTE]
+The placeholder integration allows you to display data from other plugins in specific locations in PlotSquared.
 
 For example, with https://www.spigotmc.org/resources/featherboard.2691[FeatherBoard] you can create a scoreboard (sideboard) with the info about the plot you're standing on. And with using https://www.spigotmc.org/resources/placeholderapi.6245/[PlaceholderAPI], you can do `/plot flag set greeting Welcome %player_name%` which translates to "Welcome Steve" when the player Steve enters a plot. +
 The `Player` expansion from PlaceholderAPI is required to be installed.
+
+Currently, (FeatherBoard and) PlaceholderAPI placeholders, can be used in the `greeting` and `farewell` flag of a plot.
 
 == Setup
 
@@ -34,13 +37,14 @@ Placeholders can be turned off in `settings.yml`:
 
 == Tips for specific plugins
 
-== Chat-System
+=== Chat-System
 
 If you're using *EssentialsChat* and *PlaceholderAPI*, you must install https://www.spigotmc.org/resources/chatinjector.38327/[*ChatInjector*] in order for the placeholders to show up in the chat. However, please note it has been reported that ChatInjector might cause issues.
 
 == PlotSquared placeholders
 
-TIP: If you think a placeholder for PlotSquared should be added, then please https://github.com/IntellectualSites/PlotSquared/issues/new/choose[raise an issue here].
+[TIP]
+If you think a placeholder for PlotSquared should be added, then please https://github.com/IntellectualSites/PlotSquared/issues/new/choose[raise an issue here].
 
 _Available placeholders in 6.0.0 onwards:_
 
