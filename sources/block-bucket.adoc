@@ -18,7 +18,7 @@ Blocks can be in the format `namespace:block[property1=value1,property2=value2]`
 
 Complex patterns are also accepted:
 
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/wiki/Patterns[FAWE Patterns] (If you have FAWE installed)
+* https://intellectualsites.github.io/fastasyncworldedit-documentation/patterns/patterns[FAWE Patterns] (If you have FAWE installed)
 // TODO Find proper Fawe link
 * https://worldedit.enginehub.org/en/latest/usage/general/patterns/[WorldEdit Patterns]
 

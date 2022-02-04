@@ -207,7 +207,7 @@ This update focuses a lot on the chunk processor and I have therefore updated it
 == v5.12.0
 
 ____
-Due to changes to plot components in this version, it is highly recommended to use the latest version of FastAsyncWorldEdit (If you want to use FAWE).
+Due to changes to plot components in this version, it is highly recommended using the latest version of FastAsyncWorldEdit (If you want to use FAWE).
 ____
 
 == Major Changes
