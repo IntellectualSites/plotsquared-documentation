@@ -1381,18 +1381,6 @@ Upload settings.yml, worlds.yml, your latest.log and Multiverse's worlds.yml (if
 
 *Source Code:* https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/DebugPaste.java[here]
 
-=== DEBUGCLAIMTEST
-
-If you accidentally delete your database, this command will attempt to restore all plots based on the data from plot signs. Execution time may vary.
-
-*Usage:*
-`/plot debugclaimtest`
-
-*Permissions:*
-`plots.debugclaimtest` - Access to the command `/plot debugclaimtest`
-
-*Source Code:* https://github.com/IntellectualSites/PlotSquared/blob/d0b6badf096a8989fe3d2679248496ca2b741fac/Core/src/main/java/com/github/intellectualsites/plotsquared/plot/commands/DebugClaimTest.java[here]
-
 === DEBUGROADREGEN
 
 Regenerate all roads based on the road schematic. Insert "plot" to regen it from the plot height, input "height [height]" to regen from a custom height.
