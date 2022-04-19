@@ -5,7 +5,7 @@
 :icons: font
 :source-highlighter: coderay
 
-:latestVersion: 6.6.2
+:latestVersion: 6.6.3
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
