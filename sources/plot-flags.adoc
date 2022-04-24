@@ -284,7 +284,7 @@ leaves the plot. |False
 
 |prevent-creative-copy | Prevents people from copying item NBT data in the plot unless they're added as members. |False
 
-|projectiles | Prevents guests from shooting projectiles on the plot when set to false. | false
+|projectiles | Prevents guests from shooting projectiles on the plot when set to false. |False
 
 |redstone |Set to `false` to disable redstone in the plot. |True
 
