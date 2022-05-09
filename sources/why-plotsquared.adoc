@@ -24,7 +24,7 @@
 == Safety
 
 * You can safely allow redstone, tnt without worrying about lag, griefing from sand cannons, pistons, tnt, ...
-* You have a reliable https://dev.bukkit.org/projects/worldedit[WorldEdit] / https://www.spigotmc.org/resources/fast-async-worldedit.13932[FasAsyncWorldEdit] restriction
+* You have a reliable https://dev.bukkit.org/projects/worldedit[WorldEdit] / https://www.spigotmc.org/resources/fast-async-worldedit.13932[FastAsyncWorldEdit] restriction
 * Chunk and WorldEdit processor to prevent lag, crashes and data corruption
 * Lots of redundancies. e.g. Backup your database with `/plot database`, or if you loose both, you can still recover based on plot sign information.
 
