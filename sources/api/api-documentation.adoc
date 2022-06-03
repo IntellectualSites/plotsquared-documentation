@@ -13,7 +13,6 @@
 
 * Core Module Javadocs: https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/index.html
 * Bukkit Javadocs: https://javadoc.io/doc/com.plotsquared/PlotSquared-Bukkit/latest/index.html
-* Aggregated Javadocs: https://ci.athion.net/job/PlotSquared-v6-Javadocs/javadoc/
 
 [TIP]
 Gradle is the recommended when working with the PlotSquared API. Ensure the https://docs.gradle.org/current/userguide/toolchains.html[toolchain] points to Java 17 or higher.
