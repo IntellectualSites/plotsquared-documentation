@@ -302,7 +302,7 @@ equivalent to setting the server as the plot owner. |False
 
 |tamed-interact | Set to `true` to allow guests to interact with tamed animals in the plot. |False
 
-|#-visit |Set to `false` to disallow untrusted players from visiting the plot. |True
+|untrusted-visit |Set to `false` to disallow untrusted players from visiting the plot. |True
 
 |vehicle-break |Set to `true` to allow guests to break vehicles in the
 plot. |False
