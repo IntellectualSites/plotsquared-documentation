@@ -16,17 +16,17 @@ A plot flag is any property that can be assigned to a plot, that will alter its 
 To create a new flag, simply extend PlotFlag, or one of the default types:
 
 .Flag Types:
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/BlockTypeListFlag.html[BlockTypeListFlag]`: Holds WorldEdit BlockTypes
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/BlockTypeWrapper.html[BlockTypeWrapper]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/BooleanFlag.html[BooleanFlag]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/DoubleFlag.html[DoubleFlag]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/IntegerFlag.html[IntegerFlag]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/ListFlag.html[ListFlag]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/LongFlag.html[LongFlag]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/NonNegativeIntegerFlag.html[NonNegativeIntegerFlag]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/NumberFlag.html[NumberFlag]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/StringFlag.html[StringFlag]`
-* `link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/plot/flag/types/TimedFlag.html[TimedFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/BlockTypeListFlag.html[BlockTypeListFlag]`: Holds WorldEdit BlockTypes
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/BlockTypeWrapper.html[BlockTypeWrapper]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/BooleanFlag.html[BooleanFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/DoubleFlag.html[DoubleFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/IntegerFlag.html[IntegerFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/ListFlag.html[ListFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/LongFlag.html[LongFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/NonNegativeIntegerFlag.html[NonNegativeIntegerFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/NumberFlag.html[NumberFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/StringFlag.html[StringFlag]`
+* `link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/plot/flag/types/TimedFlag.html[TimedFlag]`
 
 Flags are essentially immutable value containers. The flag values must be able to be parsed from a string, and later on serialized into a string.
 
