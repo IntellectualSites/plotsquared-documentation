@@ -15,7 +15,7 @@ PlotSquared uses the link:https://github.com/google/guava/wiki/EventBusExplained
 
 == Event List
 
-Events can be found link:https://javadoc.io/doc/com.plotsquared/PlotSquared-Core/latest/com/plotsquared/core/events/package-summary.html[here].
+Events can be found link:https://intellectualsites.github.io/plotsquared-javadocs/core/com/plotsquared/core/events/package-summary.html[here].
 
 == Getting an instance
 
