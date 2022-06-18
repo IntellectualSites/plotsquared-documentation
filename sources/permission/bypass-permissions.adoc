@@ -84,3 +84,4 @@ Bypass destroy and build needs "plots.admin.interact.other" to function.
 === Misc bypass
 
 * plots.teleport.delay.bypass
+* plots.admin.build.heightlimit
