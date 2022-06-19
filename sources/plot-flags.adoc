@@ -407,7 +407,7 @@ effect of time dependent game mechanics. |Disabled
 |description |Plot description. |None
 |farewell |Message sent to players when leaving the plot. |None
 |greeting |Message sent to players on plot entry. |None
-|plot-title |Set the pop-up title's title and subtitle. Format: `/plot flag set title "A title" "The subtitle\` |None
+|plot-title |Set the pop-up title's title and subtitle. Format: `/plot flag set title "A title" "The subtitle"` |None
 |===
 
 === Timed
