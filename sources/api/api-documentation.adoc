@@ -5,7 +5,6 @@
 :icons: font
 :source-highlighter: coderay
 
-:latestVersion: 6.9.1
 :bomVersion: 1.7
 
 ===== xref:../README.adoc[🏠 Return to the index]
@@ -18,7 +17,7 @@
 Gradle is the recommended when working with the PlotSquared API. Ensure the https://docs.gradle.org/current/userguide/toolchains.html[toolchain] points to Java 17 or higher.
 
 [NOTE]
-If you are looking for snapshots, add the repository of S01 OSS Sonatype to the repositories' block.
+If you are looking for snapshots, add the repository of S01 OSS Sonatype (`https://s01.oss.sonatype.org/`) to the repositories' block.
 
 === Gradle - PlotSquared Core
 
@@ -32,7 +31,7 @@ repositories {
 
 dependencies {
     implementation(platform("com.intellectualsites.bom:bom-1.18.x:{bomVersion}"))
-    compileOnly("com.plotsquared:PlotSquared-Core:{latestVersion}")
+    compileOnly("com.plotsquared:PlotSquared-Core")
 }
 ----
 
@@ -46,8 +45,8 @@ repositories {
 
 dependencies {
     implementation(platform("com.intellectualsites.bom:bom-1.18.x:{bomVersion}"))
-    compileOnly("com.plotsquared:PlotSquared-Core:{latestVersion}")
-    compileOnly("com.plotsquared:PlotSquared-Bukkit:{latestVersion}") { isTransitive = false }
+    compileOnly("com.plotsquared:PlotSquared-Core")
+    compileOnly("com.plotsquared:PlotSquared-Bukkit") { isTransitive = false }
 }
 ----
 
@@ -70,7 +69,6 @@ dependencies {
     <dependency>
         <groupId>com.plotsquared</groupId>
         <artifactId>PlotSquared-Core</artifactId>
-        <version>{latestVersion}</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
@@ -95,14 +93,12 @@ dependencies {
     <dependency>
         <groupId>com.plotsquared</groupId>
         <artifactId>PlotSquared-Core</artifactId>
-        <version>{latestVersion}</version>
         <scope>provided</scope>
     </dependency>
 
     <dependency>
         <groupId>com.plotsquared</groupId>
         <artifactId>PlotSquared-Bukkit</artifactId>
-        <version>{latestVersion}</version>
         <scope>provided</scope>
         <exclusions>
             <exclusion>
