@@ -56,10 +56,12 @@ dependencies {
 
 [source, xml, subs="attributes, verbatim"]
 ----
-<repository>
-    <id>papermc</id>
-    <url>https://repo.papermc.io/repository/maven-public/</url>
-</repository>
+<repositories>
+    <repository>
+        <id>papermc</id>
+        <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+</repositories>
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -84,10 +86,12 @@ dependencies {
 
 [source, xml, subs="attributes, verbatim"]
 ----
-<repository>
-    <id>papermc</id>
-    <url>https://repo.papermc.io/repository/maven-public/</url>
-</repository>
+<repositories>
+    <repository>
+        <id>papermc</id>
+        <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+</repositories>
 <dependencyManagement>
     <dependencies>
         <dependency>
