@@ -27,6 +27,7 @@ If you need to access the Bukkit module of PlotSquared, copy the example below.
 ----
 repositories {
     mavenCentral()
+    maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
 }
 
 dependencies {
@@ -41,6 +42,7 @@ dependencies {
 ----
 repositories {
     mavenCentral()
+    maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
 }
 
 dependencies {
@@ -54,6 +56,10 @@ dependencies {
 
 [source, xml, subs="attributes, verbatim"]
 ----
+<repository>
+    <id>papermc</id>
+    <url>https://repo.papermc.io/repository/maven-public/</url>
+</repository>
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -78,6 +84,10 @@ dependencies {
 
 [source, xml, subs="attributes, verbatim"]
 ----
+<repository>
+    <id>papermc</id>
+    <url>https://repo.papermc.io/repository/maven-public/</url>
+</repository>
 <dependencyManagement>
     <dependencies>
         <dependency>
