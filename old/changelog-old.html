@@ -1,0 +1,2440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>Changelog (old)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Changelog (old)</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel4">
+<li><a href="#_return_to_the_index">🏠 Return to the index</a></li>
+<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_v4_to_v5">v4 to v5:</a></li>
+<li><a href="#_v5">V5:</a></li>
+<li><a href="#_v6">V6:</a></li>
+<li><a href="#_v5_0_0_to_5_9_0">v5.0.0 to 5.9.0</a></li>
+<li><a href="#_v5_10_0">v5.10.0</a></li>
+<li><a href="#_v5_10_1">v5.10.1</a></li>
+<li><a href="#_v5_10_2">v5.10.2</a></li>
+<li><a href="#_v5_10_4">v5.10.4</a></li>
+<li><a href="#_v5_10_5">v5.10.5</a></li>
+<li><a href="#_v5_11_0">v5.11.0</a></li>
+<li><a href="#_v5_11_1">v5.11.1</a></li>
+<li><a href="#_v5_12_0">v5.12.0</a></li>
+<li><a href="#_major_changes">Major Changes</a>
+<ul class="sectlevel2">
+<li><a href="#_single_plot_area">Single Plot Area</a></li>
+<li><a href="#_plot_component_gui">Plot Component GUI</a></li>
+<li><a href="#_uuid_system_remake">UUID System Remake</a></li>
+</ul>
+</li>
+<li><a href="#_other_changes">Other Changes</a>
+<ul class="sectlevel2">
+<li><a href="#_features">Features</a></li>
+<li><a href="#_changes">Changes</a></li>
+<li><a href="#_fixes">Fixes</a></li>
+</ul>
+</li>
+<li><a href="#_v5_12_1">v5.12.1</a></li>
+<li><a href="#_v5_12_2">v5.12.2</a></li>
+<li><a href="#_v5_12_3">v5.12.3</a></li>
+<li><a href="#_v5_12_4">v5.12.4</a></li>
+<li><a href="#_v5_13_0">v5.13.0</a></li>
+<li><a href="#_v5_13_1">v5.13.1</a></li>
+<li><a href="#_v5_13_2">v5.13.2</a></li>
+<li><a href="#_v5_13_3">v5.13.3</a></li>
+<li><a href="#_v5_13_4">v5.13.4</a></li>
+<li><a href="#_v5_13_5">v5.13.5</a></li>
+<li><a href="#_v5_13_6">v5.13.6</a></li>
+<li><a href="#_v5_13_8">v5.13.8</a></li>
+<li><a href="#_v5_13_9">v5.13.9</a></li>
+<li><a href="#_v5_13_10">v5.13.10</a></li>
+<li><a href="#_v5_13_11">v5.13.11</a></li>
+<li><a href="#_plotsquared_6_0_0">PlotSquared 6.0.0</a></li>
+<li><a href="#_settings_yml_changes">Settings.yml Changes:</a>
+<ul class="sectlevel2">
+<li><a href="#_removed">Removed:</a></li>
+<li><a href="#_additions">Additions:</a></li>
+</ul>
+</li>
+<li><a href="#_worlds_yml_changes">Worlds.yml Changes:</a></li>
+<li><a href="#_translation_changes">Translation Changes:</a></li>
+<li><a href="#_permission_changes">Permission Changes:</a>
+<ul class="sectlevel2">
+<li><a href="#_single_permission_changes">Single permission changes</a></li>
+<li><a href="#_permission_pack_changes">Permission pack changes</a></li>
+</ul>
+</li>
+<li><a href="#_placeholder_changes">Placeholder changes</a>
+<ul class="sectlevel2">
+<li><a href="#_additions_3">Additions:</a></li>
+<li><a href="#_changes_2">Changes:</a></li>
+</ul>
+</li>
+<li><a href="#_command_changes">Command changes</a></li>
+<li><a href="#_usability_changes">Usability changes</a></li>
+<li><a href="#_flag_changes">Flag changes</a>
+<ul class="sectlevel2">
+<li><a href="#_additions_4">Additions:</a></li>
+</ul>
+</li>
+<li><a href="#_bug_fixes_only_listing_issues_present_in_previous_versions_not_something_introduced_addressed_in_v6">Bug fixes (Only listing issues present in previous versions, not something introduced &amp; addressed in v6)</a></li>
+<li><a href="#_other_changes_2">Other changes</a></li>
+<li><a href="#_plotsquared_6_0_1">PlotSquared 6.0.1</a></li>
+<li><a href="#_plotsquared_6_0_2">PlotSquared 6.0.2</a></li>
+<li><a href="#_plotsquared_6_0_3">PlotSquared 6.0.3</a></li>
+<li><a href="#_plotsquared_6_0_4">PlotSquared 6.0.4</a></li>
+<li><a href="#_plotsquared_v6_0_5">PlotSquared v6.0.5</a></li>
+<li><a href="#_plotsquared_v6_0_6">PlotSquared v6.0.6</a></li>
+<li><a href="#_plotsquared_v6_0_7">PlotSquared v6.0.7</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect4">
+<h5 id="_return_to_the_index"><a href="../README.html">🏠 Return to the index</a></h5>
+
+</div>
+<div class="sect1">
+<h2 id="_introduction">Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>New changelogs can be obtained on the Releases tab on GitHub.</p>
+</div>
+<div class="paragraph">
+<p>Direct links to versions:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v4_to_v5">v4 to v5:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="spigot-changelog-v4----v5.html">Click here</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5">V5:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v500-to-590">v5.0.0 to 5.9.0</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5100">v5.10.0</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5101">v5.10.1</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5102">v5.10.2</a></p>
+</li>
+<li>
+<p>[v5.10.3]Internal changes, no public version released.</p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5104">v5.10.4</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5105">v5.10.5</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5110">v5.11.0</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5111">v5.11.1</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5120">v5.12.0</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5121">v5.12.1</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5122">v5.12.2</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5123">v5.12.3</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5124">v5.12.4</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5130">v5.13.0</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5131">v5.13.1</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5132">v5.13.2</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5133">v5.13.3</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5134">v5.13.4</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5135">v5.13.5</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5136">v5.13.6</a></p>
+</li>
+<li>
+<p>[v5.13.7]Internal changes, no public version released.</p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5138">v5.13.8</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v5139">v5.13.9</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v51310">v5.13.10</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#v51311">v5.13.11</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v6">V6:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#plotsquared-600">v6.0.0</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#plotsquared-601">v6.0.1</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#plotsquared-602">v6.0.2</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#plotsquared-603">v6.0.3</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#plotsquared-604">v6.0.4</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#plotsquared-605">v6.0.5</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#plotsquared-606">v6.0.6</a></p>
+</li>
+<li>
+<p><a href="https://github.com/IntellectualSites/PlotSquared-Documentation/wiki/Changelog#plotsquared-607">v6.0.7</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_0_0_to_5_9_0">v5.0.0 to 5.9.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Flags:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Completely rewritten flag system</p>
+</li>
+<li>
+<p>Improved flag database handling</p>
+</li>
+<li>
+<p>Add support for material tags/categories in flags</p>
+</li>
+<li>
+<p>Improve /plot flag info and /plot flag list</p>
+</li>
+<li>
+<p>Add flag command completion</p>
+</li>
+<li>
+<p>Rewritten wiki flag pages</p>
+</li>
+<li>
+<p>Make golems be included in animal-attack</p>
+</li>
+<li>
+<p>Fix block-ignition in merged plots</p>
+</li>
+<li>
+<p>Fix liquid-flow</p>
+</li>
+<li>
+<p>Fix untrusted-visit</p>
+</li>
+<li>
+<p>Fix fly not restoring player flight correctly</p>
+</li>
+<li>
+<p>Add a coral-dry flag</p>
+</li>
+<li>
+<p>Add a chat flag handling plot chat</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Performance:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Prevent synchronous chunk loads throughout the plugin. This greatly reduces the impact /plot auto has on performance</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Generator:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Make sure clearing augmented plots with full vanilla terrain does not generate walls</p>
+</li>
+<li>
+<p>Use WorldEdit to regenerate chunks in augmented plots (Warning: This is very slow!)</p>
+</li>
+<li>
+<p>Support schematics v2 (biomes, entities, etc!)
+Other:</p>
+</li>
+<li>
+<p>Fix retrieval of offline player profiles in 1.15</p>
+</li>
+<li>
+<p>Add option to have road regeneration persistent across restarts</p>
+</li>
+<li>
+<p>Add option to have /plot purge also clear the purged plots</p>
+</li>
+<li>
+<p>Make PlotSqaured events platform agnostic</p>
+</li>
+<li>
+<p>Make the PlotSquared events tidier</p>
+</li>
+<li>
+<p>Fix issue where /plot swap didn&#8217;t correctly update owners</p>
+</li>
+<li>
+<p>Fix issue where /plot move didn&#8217;t clear the plots</p>
+</li>
+<li>
+<p>Fix issue where /plot swap didn&#8217;t correctly update the plot signs</p>
+</li>
+<li>
+<p>Improve the swapping/moving API</p>
+</li>
+<li>
+<p>Fix /plot comment (from V4)</p>
+</li>
+<li>
+<p>Fix pattern generation (from V4)</p>
+</li>
+<li>
+<p>Fix the legacy converter (from V4)</p>
+</li>
+<li>
+<p>Allow restone to be used in server plots  with redstone.disable-offline enabled</p>
+</li>
+<li>
+<p>Fix biome setting (it now works in 1.13-1.15+)</p>
+</li>
+<li>
+<p>Fix issue where liquids could flow from borders/walls into plots</p>
+</li>
+<li>
+<p>Improve plot owner API</p>
+</li>
+<li>
+<p>Improve the code base internally by removing a bunch of magic values, and increasing code encapsulation</p>
+</li>
+<li>
+<p>Allow trusted users to use /plot set</p>
+</li>
+<li>
+<p>Add PAPI placeholders to PlotSquared (moved from the expansion)</p>
+</li>
+<li>
+<p>Fix issue where Bukkit world API was interacted with asynchronously, which caused PlotSquared augmented generation to fail when using recent Paper builds</p>
+</li>
+<li>
+<p>Better organisation of the code base</p>
+</li>
+<li>
+<p>Completely restructed package names</p>
+</li>
+<li>
+<p>Added option to force plot chat</p>
+</li>
+<li>
+<p>Lots of other minor changes..</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_10_0">v5.10.0</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed issues with update notifications</p>
+</li>
+<li>
+<p>Fixed issue with extremely slow plot clearing</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_10_1">v5.10.1</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed updater issue caused by the Spigot API returning 5.1 not 5.10 for the version.</p>
+</li>
+<li>
+<p>Updated default config value for plot biome to match the format WorldEdit accepts, and fix incorrectly formatted existing config values.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_10_2">v5.10.2</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Update notifications are now polled every 30 minutes, and only congratulates for running the latest version once. No longer polls every time a player with permissions joins when update checking is enabled either.</p>
+</li>
+<li>
+<p>Fix getting plot comments.</p>
+</li>
+<li>
+<p>Fix null errors with PlaceholderAPI. Also sure up some of the logic so that even if the player is not in a plot, relevant placeholders can still be used.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_10_4">v5.10.4</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Added Paper-specific listeners (configurable) to:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Prevent mobs from leaving the plot by wandering out</p>
+</li>
+<li>
+<p>Improve mob spawn prevention performance</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Reduce default update poll rate even more (default 6 hrs, with config option)</p>
+</li>
+<li>
+<p>LiquidFlow flag enabled will override block physics denied</p>
+</li>
+<li>
+<p>Flag names must be 64 characters or less (should allow for older Database schemas to not error)</p>
+</li>
+<li>
+<p>Plotworlds with plot + road size less than 16 will no longer cause generation issues.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>This version also contains the following changes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add config option to disable polling after an update is found (will also no longer print updates to console). Players in-game will still receive the prompt.</p>
+</li>
+<li>
+<p>Correctly detect when a newer version is available to counter Spigot&#8217;s API lag</p>
+</li>
+<li>
+<p>LiquidFlow flag is now an enum with three values: default, enabled and disabled</p>
+</li>
+<li>
+<p>Bring SpawnReasons up-to-date with what&#8217;s in Spigot</p>
+</li>
+<li>
+<p>Plot expiry messages are now clickable to run commands</p>
+</li>
+<li>
+<p>Plot setup will correctly display the world type options</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_10_5">v5.10.5</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Fix errors during plot analysis</p>
+</li>
+<li>
+<p>Correctly display grants used and grants remaining</p>
+</li>
+<li>
+<p>Fix grants when using /plot auto</p>
+</li>
+<li>
+<p>Fix block tags (#buttons) when used in flags after restarting server</p>
+</li>
+<li>
+<p>Fix /plot merge all</p>
+</li>
+<li>
+<p>Don&#8217;t send chat spy to message sender</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_11_0">v5.11.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a larger update. It is highly recommend that you read through the linked material. Please note that the backup system is enabled by default, and will delay <code>/plot clear</code> and <code>/plot set &lt;component&gt;</code> until a snapshot has been taken of the plot. This can be disabled in the settings file.</p>
+</div>
+<div class="paragraph">
+<p>If you have extremely big plots (&gt;200 blocks in width) you should probably disable automatic backups.</p>
+</div>
+<div class="paragraph">
+<p><strong>If you&#8217;re going to use the backup system together with FAWE, please update to the latest FAWE build!</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>New Features</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added plot backups <a href="https://wiki.intellectualsites.com/en/plotsquared/backups" class="bare">https://wiki.intellectualsites.com/en/plotsquared/backups</a></p>
+</li>
+<li>
+<p>Added a <code>keep-inventory</code> flag</p>
+</li>
+<li>
+<p>Added a way to disable certain blocks from being used in <code>/plot set</code> (in settings.yml) (<a href="https://i.imgur.com/pO0grZd.png" class="bare">https://i.imgur.com/pO0grZd.png</a>). By default this includes: <a href="https://pastie.io/qhceln.txt" class="bare">https://pastie.io/qhceln.txt</a></p>
+</li>
+<li>
+<p>Added a new wiki page for <code>/plot set</code>: <a href="https://wiki.intellectualsites.com/en/plotsquared/plot-settings" class="bare">https://wiki.intellectualsites.com/en/plotsquared/plot-settings</a></p>
+</li>
+<li>
+<p>Added command completions for <code>/plot set</code>: <a href="https://i.imgur.com/kNz3zks.png" class="bare">https://i.imgur.com/kNz3zks.png</a></p>
+</li>
+<li>
+<p>Added updated French translations</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed slime navigation bug</p>
+</li>
+<li>
+<p>Fixed potential issue with our entity combat listener</p>
+</li>
+<li>
+<p>Fixed <code>/plot merge auto</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_11_1">v5.11.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This update focuses a lot on the chunk processor and I have therefore updated its wiki page: <a href="https://wiki.intellectualsites.com/en/plotsquared/optimization/chunk-processor" class="bare">https://wiki.intellectualsites.com/en/plotsquared/optimization/chunk-processor</a>. This system is quite handy if your server suffers from large tile entity counts, and now it now works properly again.</p>
+</div>
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added the flag <code>prevent-creative-copy</code> to prevent people from copying NBT data in the plot</p>
+</li>
+<li>
+<p>Added the option to enable the tile entity check on block placement when using Paper</p>
+</li>
+<li>
+<p>Added a new bStats chart for tracking FAWE usage</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Changes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(Currently WE only - Not FAWE compatible) Updated the WE listener to correctly limit tile entitites, and make the limit apply per chunk rather than per edit</p>
+</li>
+<li>
+<p>Made <code>/plot set &lt;component&gt;</code> respect the tile entity limit</p>
+</li>
+<li>
+<p>Updated the chunk manager code</p>
+</li>
+<li>
+<p>Allow <code>/plot auto</code> from non-plot areas if the server only has one plot area</p>
+</li>
+<li>
+<p>Copy NBT data on plot move, swap, etc</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed the update notifier for the 950th time</p>
+</li>
+<li>
+<p>Fixed an issue where <code>/plot set ##*category</code> would bypass the blacklist</p>
+</li>
+<li>
+<p>Fixed an issue where the tile entity and entity limit would delete all entities in the chunk</p>
+</li>
+<li>
+<p>Fixed an issue where style.yml wouldn&#8217;t update the default values</p>
+</li>
+<li>
+<p>Made <code>/plot setbiome</code> properly load chunks before updating the biome</p>
+</li>
+<li>
+<p>Made <code>/plot clear</code> empty tile entities before removing them</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>If you are using FastAsyncWorldEdit, please update to the latest FAWE build, as PlotSquared&#8217;s chunk manager has changed</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_12_0">v5.12.0</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Due to changes to plot components in this version, it is highly recommended using the latest version of FastAsyncWorldEdit (If you want to use FAWE).</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_major_changes">Major Changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_single_plot_area">Single Plot Area</h3>
+<div class="paragraph">
+<p>This version makes it a lot easier to create single plots in a non-plot world, making use of the WorldEdit selection want. You can now create plots anywhere you like and leverage the power of PlotSquared in all your worlds. Read more <a href="/plotsquared/installation/single-plot-area">here</a>.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_plot_component_gui">Plot Component GUI</h3>
+<div class="paragraph">
+<p>PlotSquared now allows you create component presets that can be used through a GUI. Read more <a href="/plotsquared/installation/plot-components">here</a>.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_uuid_system_remake">UUID System Remake</h3>
+<div class="paragraph">
+<p>We have rewritten our UUID handling from scratch, and UUID to username mapping should be a lot more reliable going roward. This should be able to resolve all issues with "Unknown" plot members, owners, etc.</p>
+</div>
+<div class="paragraph">
+<p>When you run the usernames automatically from different sources (in the given order):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In memory cache</p>
+</li>
+<li>
+<p>New user_data.db (SQLite cache)</p>
+</li>
+<li>
+<p>Legacy userdata.db (SQLite cache)</p>
+</li>
+<li>
+<p>Bukkit offline players / Paper profiles</p>
+</li>
+<li>
+<p>(Optional) Essentials user files</p>
+</li>
+<li>
+<p>(Optional) LuckPerms user data</p>
+</li>
+<li>
+<p>(Optional) BungeePerms user data</p>
+</li>
+<li>
+<p>Mojang API</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The first time you run PlotSquared v5.12.0 it might have to run for an extended amount of time, depending on the amount of missing UUIDs on your server. The reason it&#8217;s particularly slow in this case is because Mojang enforces a very restrictive rate limit on the amount of requests we can make. When this entire process has been completed once, PlotSquared will be able to index thousands of UUIDs in a matter of seconds.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>If you run an offline-mode server without BungeeCord, your old UUID cache may no longer be functional, which means that everyone will be listed as "Unknown" until they join the server for the first time. If this happens, please contact us on Discord so we can evaulate your particular setup and hopefully remedy the issue.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>This also means that you can add people to plots, make them owners etc, even if they have never been on the server before.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_changes">Other Changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_features">Features</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added a new internal world management system.</p>
+</li>
+<li>
+<p>Added tab completion for <code>/plot visit</code>.</p>
+</li>
+<li>
+<p>Added tab completion for <code>/plot list</code>.</p>
+</li>
+<li>
+<p>Added tab completion for <code>/plot &lt;add|trust|deny|kick|remove&gt;</code>.</p>
+</li>
+<li>
+<p>Added support for asynchronous tab completion (Paper only).</p>
+</li>
+<li>
+<p>Added <code>/plot toggle debug</code> which will inform plot owners and administrators when flags are changing the outcome of events</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_changes">Changes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Switched issue tracker. We now use <a href="https://issues.intellectualsites.com/projects/ps">YouTrack</a>.</p>
+</li>
+<li>
+<p>PlotSquared will now register itself in <code>bukkit.yml</code>, which should resolve issue where worlds were not recognized as plot worlds.</p>
+</li>
+<li>
+<p>Make large operations less prone to crash the server.</p>
+</li>
+<li>
+<p>Moved the cuboid operation method, this now means that FAWE can take control of operations like <code>/plot set</code>.</p>
+</li>
+<li>
+<p>Switch out the internal plot area mappings and use an <a href="https://en.wikipedia.org/wiki/R-tree">R-tree</a>. This will perform better when a world has a large amount of plot areas.</p>
+</li>
+<li>
+<p>Greatly improve the plot area API.</p>
+</li>
+<li>
+<p>Add a plot query API and use it internally.</p>
+</li>
+<li>
+<p>Overhauled the internals of the <code>/plot setup</code> command. It also got some tab completion e.g. for blocks.</p>
+</li>
+<li>
+<p>Made the list of command aliases that the paper command completer will act on.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixes">Fixes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed issues with schematic saving (<a href="https://github.com/IntellectualSites/PlotSquared/commit/d5d18a60fb68e95115a1f8678043e6f01a76d328">#2836</a>).</p>
+</li>
+<li>
+<p>Fixed an issue where plot chat was not send to actor when plot chat spy activated (<a href="https://issues.intellectualsites.com/issue/PS-7">#PS-7</a>).</p>
+</li>
+<li>
+<p>As a consequence of the new UUID system, "unknown" should not be an issue anymore :smile:.</p>
+</li>
+<li>
+<p>Fixed issues where visit would bring you to the wrong player&#8217;s plot.</p>
+</li>
+<li>
+<p>Fixed an issue where merging plots would generate the plot blocks on road height instead of plot height (<a href="https://issues.intellectualsites.com/issue/PS-46">#PS-46</a>)</p>
+</li>
+<li>
+<p>Correct the the keep-commands sent during expiration.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_12_1">v5.12.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This version is a minor hotfix in regards to v5.12.0</p>
+</div>
+<div class="paragraph">
+<p><strong>Changes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This version fixes an issue where old player objects were not cleaned up properly. This is caused by an issue with the event order in Spigot (and Spigot derivatives).</p>
+</li>
+<li>
+<p>Issues relating commands not working have been resolved as well.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_12_2">v5.12.2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This update focuses a lot on 1.16 with all its new features and enhancements.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.spigotmc.org/resources/plotsquared-v5.77506/update?update=346686" class="bare">https://www.spigotmc.org/resources/plotsquared-v5.77506/update?update=346686</a></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Warn:</strong> If <code>/plots home</code> does not function, please delete your <code>plugins/PlotSquared/config/commands.yml</code> file.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added the placeholder <code>%plotsquared_currentplot_localflag_&lt;flag&gt;%</code> and <code>%plotsquared_currentplot_flag_&lt;flag&gt;%</code> to return flag values of  plot flags.</p>
+</li>
+<li>
+<p>Added 1.16.1 support</p>
+</li>
+<li>
+<p>Added a config option to make cache expiration configurable.</p>
+</li>
+<li>
+<p>Added config option to disable background caching of uuids.</p>
+</li>
+<li>
+<p>Added a method to hook into plot clearing and modify the behavior, which allows plugins like FAWE to boost clearing speed.</p>
+</li>
+<li>
+<p>Added the ability to set flags for the plot road. You can do so in the worlds.yml.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Changes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Lowered tab completion cache time to 15 seconds rather than 1 minute.</p>
+</li>
+<li>
+<p>Only initialise EconHandler when economy is enabled and stop accessing the static instance directly.</p>
+</li>
+<li>
+<p>Separate the Vault Permission Handling from the Economy Handling.</p>
+</li>
+<li>
+<p>Added <code>plots.admin.alias.remove</code> and <code>plots.admin.alias.set</code> permission nodes.</p>
+</li>
+<li>
+<p><code>/plot visit</code> and <code>/plot home</code> where split up in two different commands. (You can now teleport to your 12384th plot without any issues)</p>
+</li>
+<li>
+<p><code>/plot visit</code> and <code>/plot home</code> now have separate permission nodes: <code>plots.visit</code> and <code>plots.home</code>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Check the new syntax: <a href="https://wiki.intellectualsites.com/en/plotsquared/commands-and-permissions#home">/p home</a> and <a href="https://wiki.intellectualsites.com/en/plotsquared/commands-and-permissions#visit">/p visit</a>. The new placeholders are descriped at <a href="https://wiki.intellectualsites.com/en/plotsquared/placeholders">here</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed an issue with the OfflinePlayerUUIDService breaking when no worlds have been loaded</p>
+</li>
+<li>
+<p>Fixed an issue where numbers were sometimes parsed as usernames when they shouldn&#8217;t be.</p>
+</li>
+<li>
+<p>Fixed "Not a valid plot ID" being sent twice</p>
+</li>
+<li>
+<p>Fixed "invalid player" message on /plot kick</p>
+</li>
+<li>
+<p>Fixed world border update on Plot#claim [<a href="https://issues.intellectualsites.com/issue/PS-13">PS-13</a>]</p>
+</li>
+<li>
+<p>Fixed an issue with plot backups</p>
+</li>
+<li>
+<p>Fixed incorrect biome data for road intersections [<a href="https://issues.intellectualsites.com/issue/PS-50">PS-50</a>]</p>
+</li>
+<li>
+<p>Fixed incorrect /plot alias tab completion</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>If you are experiencing constant rain on 1.16.1 in your plot worlds, update your SpigotMC build (or derivatives). This refers to an issue on Spigot&#8217;s end [<a href="https://hub.spigotmc.org/jira/browse/SPIGOT-5849">SPIGOT-5849</a>] which has been fixed by now.</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_12_3">v5.12.3</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Changes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Remove <code>commands.yml</code>. This will be reimplemented in version 6</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed issue where players couldn&#8217;t interact with their own plots</p>
+</li>
+<li>
+<p>Fixed issue where players couldn&#8217;t teleport to merged plots</p>
+</li>
+<li>
+<p>Fixed issue where the plot expiration task wouldn&#8217;t start</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_12_4">v5.12.4</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixes a bunch of issues related to dispensers and plot roads (<a href="https://github.com/IntellectualSites/PlotSquared/pull/2874">#2874</a>)</p>
+</li>
+<li>
+<p>Fix the <code>%plotsquared_currentplot_owner%</code> placeholder throwing exceptions (PS-62)</p>
+</li>
+<li>
+<p>Fix kill-road-mobs (PS-73)</p>
+</li>
+<li>
+<p>Fixes issues related to pistons and plot roads (<a href="https://github.com/IntellectualSites/PlotSquared/pull/2875">#2875</a> / PS-39)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Changes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Send teleportation cancellation message immediately on movement (PS-33)</p>
+</li>
+<li>
+<p>Split failed UUID batches into individual requests rather than just throwing an IllegalArgumentException</p>
+</li>
+<li>
+<p>Made PlotPlayer#getLocation return a copy of the location</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_0">v5.13.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed paste on top of road schematics</p>
+</li>
+<li>
+<p>Fixed <code>/plot target nearest</code> [<a href="https://issues.intellectualsites.com/issue/PS-74">PS-74</a>]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Changes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cleaned up bukkit listeners by splitting them up into own classes.</p>
+</li>
+<li>
+<p>Removed a few old debugs.</p>
+</li>
+<li>
+<p>Fixed a few typos on the javadocs.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added config option <code>PASTE_ROAD_ON_TOP</code> to declare whether road schematics should be pasted differently from plot schematics.</p>
+</li>
+<li>
+<p>Added config options to enable or disable each UUID service</p>
+</li>
+<li>
+<p>Added chunk coordinator, a utility that allows for the loading and coordination of chunk actions.
+The coordinator takes in collection of chunk coordinates, loads them and allows the caller to specify a sink for the loaded chunks. The coordinator will prevent the chunks from being unloaded until the sink has fully consumed the chunk.</p>
+</li>
+<li>
+<p>Added support for other placeholder API&#8217;s like MVdWPlaceholderAPI. Version 3.1.1 is recommended.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_1">v5.13.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed the redstone flag on roads</p>
+</li>
+<li>
+<p>Fixed <code>misc_spawn_unowned</code> in the worlds.yml [<a href="https://issues.intellectualsites.com/issue/PS-81">PS-81</a>]</p>
+</li>
+<li>
+<p>Fixed <code>use</code> flag when applied to the road [<a href="https://issues.intellectualsites.com/issue/PS-95">PS-95</a>]</p>
+</li>
+<li>
+<p>Fixed dupe on death when using the <code>keep-inventory</code> flag.</p>
+</li>
+<li>
+<p>Fixed pve against animals on other plots and roads</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Changes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Separated <code>misc-spawning</code> from <code>mob-spawning</code> in the worlds.yml</p>
+</li>
+<li>
+<p>Removed a few old debugs.</p>
+</li>
+<li>
+<p>Fixed a few typos on the javadocs.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added weeping and twisted vines to the <code>vine-grow</code> flag [<a href="https://github.com/IntellectualSites/PlotSquaredSuggestions/issues/133">#133</a>]</p>
+</li>
+<li>
+<p>Added german translation strings for flag descriptions</p>
+</li>
+<li>
+<p>Added Skyblock template</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_2">v5.13.2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed an issue where PlotSquared would try to convert databases created in v5 from v4 to v5, which obviously fails, because they never used v4.</p>
+</li>
+<li>
+<p>Fixed an OfflinePlayerUtil breakaged caused by NMS Changes</p>
+</li>
+<li>
+<p>Fixed an issue where visiting merged plots with multiple owners didn&#8217;t work properly.</p>
+</li>
+<li>
+<p>Fixed <code>/plot trust</code> and <code>/plot add</code> not displaying a message when trying to add or trust the plot owner.</p>
+</li>
+<li>
+<p>Fixed block ignition not being denied by default [<a href="https://issues.intellectualsites.com/issue/PS-114">PS-114</a>]</p>
+</li>
+<li>
+<p>Fixed signs not being generated by default</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added 1.16.2 support.
+If you want to use 1.16.2, use a WorldEdit build from here: <a href="https://builds.enginehub.org/job/worldedit?branch=master" class="bare">https://builds.enginehub.org/job/worldedit?branch=master</a>
+If you are using FAWE, update your FAWE build from here: <a href="https://ci.athion.net/job/FastAsyncWorldEdit-1.16/" class="bare">https://ci.athion.net/job/FastAsyncWorldEdit-1.16/</a></p>
+</li>
+<li>
+<p>Allow teleporting to merged plots with multiple owners using <code>/plot home</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_3">v5.13.3</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed validations of plot aliases with offline players <a href="https://issues.intellectualsites.com/issue/PS-126">[PS-126]</a></p>
+</li>
+<li>
+<p>Fixed TileState checks on 1.13.2 <a href="https://issues.intellectualsites.com/issue/PS-122">[PS-122]</a></p>
+</li>
+<li>
+<p>Fixed default namespace not being added when wrapping block categories by their ids <a href="https://issues.intellectualsites.com/issue/PS-131">[PS-131]</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added an option to opt-out of MvDWPlaceholderAPI to skip the placeholder injection. This setting is enabled by default, however, you can simply disable it if you don&#8217;t use PlotSquared placeholder with FeatherBoard or don&#8217;t want to use FeatherBoard&#8217;s build in placeholders and simply use it with PlaceholderAPI, that works as well.</p>
+</li>
+<li>
+<p>Added a debug (<code>/plot toggle debug</code>) onto <code>onBlockIgnite</code> event notifying players to set the <code>block-ingition</code> flag when using flint and steel before cancelling the event.</p>
+</li>
+<li>
+<p>Added a debug (<code>/plot toggle debug</code>) onto <code>onEntityBlockForm</code> event notifying players if the <code>ice-form</code> flag is not set before cancelling the event.</p>
+</li>
+<li>
+<p>Don&#8217;t send <code>notify-enter/leave</code> messages if vanished players visit a plot. <a href="https://issues.intellectualsites.com/issue/PS-103">[PS-103]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_4">v5.13.4</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added support for 1.16.3
+You will need to update Fawe or WorldEdit when updating.
+You can get the latest Fawe build here: <a href="https://www.spigotmc.org/resources/13932/update?update=360354" class="bare">https://www.spigotmc.org/resources/13932/update?update=360354</a>
+You can get the latest WorldEdit build here: <a href="https://builds.enginehub.org/job/worldedit?branch=master" class="bare">https://builds.enginehub.org/job/worldedit?branch=master</a></p>
+</li>
+<li>
+<p>Added pigstep music disc to <code>/plot music</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_5">v5.13.5</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed <code>/plot grant</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Allow /plot home <code>[area|world]</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_6">v5.13.6</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fix inconsistency between using Paper listeners and normal Spigot listeners regarding misc entity spawning</p>
+</li>
+<li>
+<p>Prevent blocks from becoming waterlogged sometimes when at the edge of the plot (prevent road water grief)</p>
+</li>
+<li>
+<p>Allow worlds to be named with uppercase lettering</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_8">v5.13.8</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1.16.4 support has been added
+You will need to update <a href="https://www.spigotmc.org/resources/fast-async-worldedit.13932/">FAWE</a> or <a href="https://dev.bukkit.org/projects/worldedit/files/3100517">WorldEdit</a> as well, depending on what you use.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_9">v5.13.9</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>/plot setowner none now works to remove the plot&#8217;s owner</p>
+</li>
+<li>
+<p>Boats can no longer be placed on other plots by interacting with interactable blocks, fixes <a href="https://issues.intellectualsites.com/issue/PS-175">PS-175</a></p>
+</li>
+<li>
+<p>Fixed single plot worlds</p>
+</li>
+<li>
+<p>Schematics now save uncorrupted tile entities</p>
+</li>
+<li>
+<p>Fixed <code>/plot deny *</code> not teleporting everyone from the plot <a href="https://issues.intellectualsites.com/issue/PS-182">PS-182</a></p>
+</li>
+<li>
+<p>Fixed <code>/plot f set disable-physics</code> true creating floating ghost blocks <a href="https://issues.intellectualsites.com/issue/PS-182">PS-159</a></p>
+</li>
+<li>
+<p>Fixed issues with schematic x/z offset being doubled up</p>
+</li>
+<li>
+<p>Fix error when attempting to purge by owner/added</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_10">v5.13.10</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>/plot debugpaste</code> failing to grab Multiverse&#8217;s worlds.yml properly</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v5_13_11">v5.13.11</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Additions</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added a couple of new metrics to bStats.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed [<a href="https://issues.intellectualsites.com/issue/PS-188">PS-188</a>]</p>
+</li>
+<li>
+<p>Fixed <code>java.lang.NoSuchFieldException: mustSave</code> on startup when server version &gt;= 1.13.2</p>
+</li>
+<li>
+<p>Fixed <code>teleport.per-world-visit</code> from settings.yml</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plotsquared_6_0_0">PlotSquared 6.0.0</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_settings_yml_changes">Settings.yml Changes:</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following entries have been removed or altered and can be deleted safely from the file.</p>
+</div>
+<div class="sect2">
+<h3 id="_removed">Removed:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The option <code>web.assets</code> has been removed due the asset interface no longer existing within v4 and v5.</p>
+</li>
+<li>
+<p>The option <code>chat.console_color</code> has been removed. PlotSquared now respects legacy and adventure components properly and will always send the correct colors.</p>
+</li>
+<li>
+<p>The options <code>uuid.use-sqluuidhandler</code>, <code>enabled_components.per-world-visit</code>, <code>chunk.block-cache</code>, <code>enabled_components.permisison-cache</code>, <code>chat.interactive</code> have been removed due to serving no purpose anymore.</p>
+</li>
+<li>
+<p>The category <code>chat</code> has been removed.</p>
+</li>
+<li>
+<p>The standalone option <code>titles</code> has been moved into its own configuration block alongside its new options.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_additions">Additions:</h3>
+<div class="paragraph">
+<p>The following entries have been added. This process is done automatically on the first start up of v6.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The option <code>enabled-components.default-locale</code> was added. The specified value will be used to find the correct translation file.</p>
+</li>
+<li>
+<p>The option <code>enabled-components.per-user-locale</code> was added. When enabling it, PlotSquared will send texts in the user&#8217;s locale if translations exist.</p>
+</li>
+<li>
+<p>The options <code>teleport.on-clear</code> and <code>teleport.on-delete</code> determining whether the user should be teleported upon clearing or deletion.</p>
+</li>
+<li>
+<p>The options <code>timeformat.date-format</code> and <code>timeformat.time-zone</code> have been added formatting the plot creation date placeholder and the appearance in <code>/plot info</code>. Editing the format does not affect the storage date.</p>
+</li>
+<li>
+<p>Added the options <code>titles.titles-fade-in</code>, <code>titles.titles-stay</code>, <code>titles.titles-fade-out</code> and <code>titles.titles-as-actionbar</code> making plot titles duration customizable and allowing you to opt in plot titles send as actionbar message.</p>
+</li>
+<li>
+<p>The former option <code>titles</code> has been transformed into <code>titles.display-titles</code>.</p>
+</li>
+<li>
+<p>The option <code>ratings.block-0</code> to 8 has been added determining the blocks to use for the <code>/plot rate</code> GUI.</p>
+</li>
+<li>
+<p>The option <code>chat.log-plotchat-to-console</code> has been added declaring whether the plot chat should be logged to console or not.</p>
+</li>
+<li>
+<p>The option <code>chat.notification-as-actionbar</code> has been added determining whether notification flags, such as notify-enter, notify-leave, greeting or farewell should send an actionbar message over a regular chat message.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_worlds_yml_changes">Worlds.yml Changes:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>The option <code>plot.sign_material</code> (respectively <code>plot.legacy_sign_material</code> for versions equal to 1.13) has been added allowing you to change the material of plot signs.</p>
+</li>
+<li>
+<p>Within the removal of the Nashorm scripting engine and the switch to <a href="https://worldedit.enginehub.org/en/latest/usage/other/expressions/">WorldEdit Expressions</a>. Expression in prices are no longer formed with <code>{arg}</code> but <code>{plots}</code> making it more intuitive to use. The conversion is done automatically by PlotSquared if such a field is detected. If you used JS functions like <code>Math.pow()</code> before, you&#8217;ll need to update that manually. For help with that, look at the WorldEdit wiki or ask on our discord.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_translation_changes">Translation Changes:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>PlotSquared uses Adventure as of v6 to handle translations and support hex color codes, gradients, etc. Click <a href="https://docs.adventure.kyori.net/minimessage.html#color">here</a> for an explanation how to apply it.</p>
+</li>
+<li>
+<p>We are now available on Crowdin Enterprise to manage our translations. Click <a href="https://intellectualsites.crowdin.com/plotsquared">here</a> to help us translating PlotSquared into your language.</p>
+</li>
+<li>
+<p>You can change the language of PlotSquared in the settings.yml, with the key <code>&lt;key&gt;</code>. You don&#8217;t need to rename any files anylonger.</p>
+</li>
+<li>
+<p>Translations are located in the <code>lang</code> folder. You can safely delete the old <code>translations</code> folder, it&#8217;s no longer needed.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_permission_changes">Permission Changes:</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Within PlotSquared v6, permissions are no longer granted by default if the person is an operator (/op [player]). PlotSquared comes with a complex permission system that <strong>should</strong> be used with a permission management software, such as <a href="https://www.spigotmc.org/resources/luckperms.28140/">LuckPerms</a>.
+However, you can grant people all PlotSquared permissions with the node <code>plots.*</code>.</p>
+</div>
+</blockquote>
+</div>
+<div class="sect2">
+<h3 id="_single_permission_changes">Single permission changes</h3>
+<div class="sect3">
+<h4 id="_additions_2">Additions:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The permission <code>plots.admin.music.other</code> has been added. It allows you to use <code>/plot music</code> on foreign plots.</p>
+</li>
+<li>
+<p>The permission <code>plots.visit.denied</code> has been added. Without the permission, players cannot visit plots they are denied on.</p>
+</li>
+<li>
+<p>The permissions <code>plots.add.&lt;amount&gt;</code>, <code>plots.trust.&lt;amount&gt;</code> and <code>plots.deny.&lt;amount&gt;</code> have been added. They are working in the same way like the range-typic permissions of <code>plots.plot.&lt;amount&gt;</code> do; you specify the amount within the permission node.</p>
+</li>
+<li>
+<p>The permission <code>plots.admin.flight</code> has been added to bypass the <code>fly</code> flag.</p>
+</li>
+<li>
+<p>The permission <code>plots.flag.notify-leave.bypass</code> has been added. <code>plots.flag.notify-enter.bypass</code> does no longer cover both types.</p>
+</li>
+<li>
+<p>The permission <code>plots.admin.components.other</code> has been added as administrative override to use <code>/plot components</code> on plots you don&#8217;t own but need to administer.</p>
+<div class="paragraph">
+<p>==== Changes:</p>
+</div>
+</li>
+<li>
+<p><code>/plot flag remove &lt;flag&gt;</code> now requires the permission node <code>plots.flag.remove</code>. Previously it was inherited by <code>plots.flag.add</code>.</p>
+</li>
+<li>
+<p>The permission <code>plots.admin.command.unlink</code> has been fixed.</p>
+</li>
+<li>
+<p>The permission <code>plots.set.alias</code> has been replaced with <code>plots.alias.set</code></p>
+</li>
+<li>
+<p>The permission <code>plots.admin.command.rate</code> has been replaced with <code>plots.admin.command.purge.ratings</code>.</p>
+</li>
+<li>
+<p>The permission <code>plots.admin.command.chat</code> has been replaced with <code>plots.admin.command.chatspy</code></p>
+</li>
+<li>
+<p>The command <code>/plot toggle &lt;attribute&gt;</code> now requires the base permission <code>plots.toggle</code> too.</p>
+<div class="paragraph">
+<p>==== Removal:</p>
+</div>
+</li>
+<li>
+<p>The permission <code>plots.list.unknown</code> has been removed.</p>
+</li>
+<li>
+<p>The permission <code>plots.admin.command.update</code> has been removed.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_permission_pack_changes">Permission pack changes</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>All <code>plotme.&lt;pack&gt;</code> packs have been removed. Below we will list the new pack that replaces the removed permission pack or the permission node to assign.
+Note: If you didn&#8217;t use the old PlotMe permissions before, you can ignore the following table!
+<mark>#</mark>#
+| Removed Permission | Replacement |
+|----------------------------------------|------------------------------------------------------|
+| plotme.use | <code>plots.permpack.basic</code>, <code>plots.plot.1</code> |
+| plotme.admin | <code>plots.admin</code> |
+| plotme.admin.clear | <code>plots.admin.command.clear</code> |
+| plotme.admin.reset | <code>plots.admin.command.delete</code> |
+| plotme.admin.add | <code>plots.admin.command.add</code> |
+| plotme.admin.deny | <code>plots.admin.command.deny</code> |
+| plotme.admin.remove | <code>plots.admin.command.remove</code> |
+| plotme.admin.undeny | <code>plots.admin.command.remove</code> |
+| plotme.admin.bypassdeny | <code>plots.admin.entry.denied</code> |
+| plotme.admin.setowner | <code>plots.admin.command.setowner</code> |
+| plotme.admin.move | <code>plots.admin.command.move</code> |
+| plotme.admin.weanywhere | <code>plots.admin.weanywhere</code> |
+| plotme.admin.list | <code>plots.list.world</code>, <code>plots.list.world.<strong></code>, <code>plots.list.top</code>, <code>plots.list.all</code>, <code>plots.list.unowned</code>, <code>plots.list.player</code>, <code>plots.list.done</code>, <code>plots.list.expired</code>, <code>plots.list.fuzzy</code>, <code>plots.list.area</code> |
+| plotme.admin.dispose | <code>plots.admin.command.delete</code> |
+| plotme.admin.done | <code>plots.admin.command.done</code> |
+| plotme.admin.expired | <code>plots.list.expired</code> |
+| plotme.admin.buildanywhere | <code>plots.admin.vehicle.</strong></code>, <code>plots.admin.interact.<strong></code>, <code>plots.admin.build.</strong></code>, <code>plots.admin.destroy.<strong></code> |
+| plotme.use.middle | <code>plots.middle</code> |
+| plotme.use.buy | <code>plots.buy</code> |
+| plotme.use.sell | <code>plots.set</code>, <code>plots.flag</code>, <code>plots.set.flag</code>, <code>plots.set.flag.price.</strong></code> |
+| plotme.use.dispose | <code>plots.delete</code> |
+| plotme.use.done | <code>plots.done</code> |
+| plotme.use.claim | <code>plots.claim</code> |
+| plotme.use.auto | <code>plots.auto</code> |
+| plotme.use.reset | <code>plots.delete</code> |
+| plotme.use.home | <code>plots.home</code> |
+| <code>plotme.use.info</code> | <code>plots.info</code> |
+| plotme.use.biome | <code>plots.set</code>, <code>plots.set.biome</code> |
+| plotme.use.clear | <code>plots.clear</code> |
+| plotme.use.list | <code>plots.list</code>, <code>plots.list.forsale</code>, <code>plots.list.mine</code>, <code>plots.list.shared</code> |
+| plotme.use.add | <code>plots.add</code>, <code>plots.trust</code>, <code>plots.add.everyone</code>, <code>plots.trust.everyone</code> |
+| plotme.use.deny | <code>plots.deny</code>, <code>plots.deny.everyone</code> |
+| plotme.use.remove | <code>plots.remove</code> |
+| plotme.use.undeny | <code>plots.remove</code> |
+| plotme.use.protect | <code>plots.set</code>, <code>plots.flag</code>, <code>plots.set.flag</code>, <code>plots.set.flag.keep.<strong></code> |
+| plotme.use.nameplot | <code>plots.alias.set</code>, <code>plots.alias.remove</code> |
+| plotme.limit.</strong> | <code>plots.plot.*</code> |
+| plotme.limit.1 | <code>plots.plot.1</code> |
+| plotme.limit.5 | <code>plots.plot.5</code> |
+| plotme.limit.10 | <code>plots.plot.10</code> |</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_placeholder_changes">Placeholder changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_additions_3">Additions:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The placeholder <code>%plotsquared_currentplot_creationdate%</code> has been added showing the plot creation date. You can customize the format in the settings.yml timeformat section.</p>
+</li>
+<li>
+<p>The placeholders<code>%plotsquared_currentplot_members_trusted_list%</code>, <code>%plotsquared_currentplot_members_added_list%</code> and <code>%plotsquared_currentplot_members_denied_list%</code> have been added displaying a list of added/trusted/denied people.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_changes_2">Changes:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><code>%plotsquared_currentplot_world%</code> has been renamed to <code>%plotsquared_currentplot_world_name%</code></p>
+</li>
+<li>
+<p><code>%plotsquared_has_build_rights%</code> has been renamed to <code>%plotsquared_currentplot_can_build</code> matching more appropriately <code>/plot info</code></p>
+</li>
+<li>
+<p><code>%plotsquared_allowed_plot_count%</code> now returns <code>infinite</code> if you have * permission</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_command_changes">Command changes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>The command <code>/plot save</code> has been removed and replaced by Arkitektonika usable via <code>/plot download</code> ingame.</p>
+</li>
+<li>
+<p>The command <code>/plot download</code> has been overhauled with Arkitektonika. You now receive a deletion key alongside the download URL to delete the schematic whenever you want.</p>
+</li>
+<li>
+<p>The command <code>/plot wea</code> has been removed due deprecation and is superseded by <code>/plot toggle worldedit</code>. Alternative aliases are <code>/plot toggle wea</code> or <code>/plot toggle we</code>.</p>
+</li>
+<li>
+<p><code>/plot help</code> now supports tab completion of categories and notifies the user if they cannot access certain help pages.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usability_changes">Usability changes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Tab completion has been added to (almost) all commands suggesting proper arguments if the user has permission.</p>
+</li>
+<li>
+<p>Vault is now being used as default currency allowing other plugins to provide their own currency ($, €, etc.)</p>
+</li>
+<li>
+<p>Destructive plot commands, such as <code>clear</code> or <code>delete</code> have been removed from plot worlds plots.</p>
+</li>
+<li>
+<p>A variety of plot commands now include the plot ID when running commands, e.g <code>/plot clear</code> or <code>/plot set biome</code></p>
+</li>
+<li>
+<p>Plot world plots now use an underscore (<code>_</code>) as index separator instead of a (semi)colon.</p>
+</li>
+<li>
+<p><code>/plot setowner</code> now respects grants</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_flag_changes">Flag changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_additions_4">Additions:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The flag <code>leaf-decay</code> has been added determining whether leaves should decay or not. The flag is set to true by default, you need to set it via <code>/plot flag set leaf-decay false</code> to stop leaves from decaying.</p>
+</li>
+<li>
+<p>The flag <code>fall-damage</code> has been added determining whether an entity or a player should take fall damange.</p>
+</li>
+<li>
+<p>The flag <code>crop-grow</code> has been added determining whether an crops can grow or not.</p>
+</li>
+<li>
+<p>The flags <code>deny-portals</code> and <code>deny-portal-travel</code> have been added determining whether portals can be created or not and can be used.</p>
+</li>
+<li>
+<p>The flag <code>deny-portal-travel</code> has been added determining whether players can travel thru portals across dimensions.</p>
+</li>
+<li>
+<p>The flag <code>lectern-read-book</code> has been added determining whether players can open lecterns to read books. Note: This requires the <code>use</code> flag set with <code>lectern</code> input.</p>
+</li>
+<li>
+<p>The flag <code>entity-change-block</code> has been added allowing to control misc entity events in a more controllable way, e.g if a player jumps on a big dripleaf.</p>
+<div class="paragraph">
+<p>=== Changes:</p>
+</div>
+</li>
+<li>
+<p>The flag <code>weather</code> now solely takes the couple of inputs <code>rain</code> and <code>clear</code> matching the vanilla naming scheme.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bug_fixes_only_listing_issues_present_in_previous_versions_not_something_introduced_addressed_in_v6">Bug fixes (Only listing issues present in previous versions, not something introduced &amp; addressed in v6)</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed issue with plot saving and loading of merged plots <a href="https://issues.intellectualsites.com/issue/PS-29">PS-29</a>, <a href="https://issues.intellectualsites.com/issue/PS-197">PS-197</a></p>
+</li>
+<li>
+<p>Fixed an issue with players not being added to the plot but jumping in cauldrons to extinguish themself draining water <a href="https://github.com/IntellectualSites/PlotSquared/issues/3034">3034</a></p>
+</li>
+<li>
+<p>Fixed an issue where kicking/denying a player from a plot did not kick them from the server if no spawn location has been set up <a href="https://github.com/IntellectualSites/PlotSquared/issues/3057">3057</a></p>
+</li>
+<li>
+<p>Fixed a couple of issues related to the handling of dragon eggs <a href="https://github.com/IntellectualSites/PlotSquared/issues/3074">3074</a>, <a href="https://github.com/IntellectualSites/PlotSquared/issues/3076">3076</a>.</p>
+</li>
+<li>
+<p>Fixed an issue where <code>/plot rate</code> would not render empty item stacks <a href="https://github.com/IntellectualSites/PlotSquared/issues/3063">3063</a></p>
+</li>
+<li>
+<p>Compatibility and targetting Java 16</p>
+</li>
+<li>
+<p>Fixed a couple of issues with <code>/plot inbox</code>: <a href="https://github.com/IntellectualSites/PlotSquared/issues/3021">3021</a>, <a href="https://github.com/IntellectualSites/PlotSquared/issues/3021">3020</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_changes_2">Other changes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Our <a href="https://ci.athion.net/job/PlotSquared-v6-Javadocs/">Javadocs</a> are now searchable and link to external resources of our dependencies used.</p>
+</li>
+<li>
+<p>Full 1.17 support</p>
+</li>
+<li>
+<p>Requiring Java 16 or higher.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plotsquared_6_0_1">PlotSquared 6.0.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Changes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Changed version of PlotAPI to 6</p>
+</li>
+<li>
+<p>Deprecated API methods scheduled for removal will now outline they are going to be removed soon</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed changing the locale not working after reboot but /plot reload <a href="https://github.com/IntellectualSites/PlotSquared/issues/3099">#3099</a></p>
+</li>
+<li>
+<p>Fixed not teleporting all players out of the plot on clear and delete if configured <a href="https://github.com/IntellectualSites/PlotSquared/issues/3102">#3102</a></p>
+</li>
+<li>
+<p>Fixed issues with Citizens using fake uuids <a href="https://github.com/IntellectualSites/PlotSquared/issues/3105">#3105</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plotsquared_6_0_2">PlotSquared 6.0.2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Changes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Update to the latest 1.17-compatible versions of FAWE</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fix typo in expression parsing for plot pricing</p>
+</li>
+<li>
+<p>Do not allow moss spread on <a href="https://github.com/IntellectualSites/PlotSquared/issues/3100">#3100</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plotsquared_6_0_3">PlotSquared 6.0.3</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Don&#8217;t attempt to load 1.17 listeners on earlier versions</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plotsquared_6_0_4">PlotSquared 6.0.4</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>**Fixes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fix the regions found for merged plots (fixes some cases of issues with plot visit/home)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plotsquared_v6_0_5">PlotSquared v6.0.5</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Changes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Check super types and interfaces on PlotPlayer#from <a href="https://github.com/IntellectualSites/FastAsyncWorldEdit/issues/1140">IntellectualSites/FastAsyncWorldEdit#1140</a></p>
+</li>
+<li>
+<p>The placeholder plotsquared_currentplot_rating does no longer display plot ratings in scientific notation if disabled <a href="https://github.com/IntellectualSites/PlotSquared/issues/3091">#3091</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed update notification message, update your translations file by deleting it, pulling from crowdin or deleting all <code>update.</code> strings from the file located in the <code>/lang/</code> folder.</p>
+</li>
+<li>
+<p>Fixed plot.added/trusted/deny.<amount>permissions</amount></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plotsquared_v6_0_6">PlotSquared v6.0.6</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Additions:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add <code>copper-oxide</code> flag</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Don&#8217;t append color codes to component lore</p>
+</li>
+<li>
+<p>Fix issue when batching SQL queries</p>
+</li>
+<li>
+<p>Workaround for when plugins teleport players before they are fully online</p>
+</li>
+<li>
+<p>Don&#8217;t error when attempting to visit plots outside max int range</p>
+</li>
+<li>
+<p>Handle <code>/p f add</code> message properly</p>
+</li>
+<li>
+<p>Projectile hits events and splash potions event cancellation is now handled properly</p>
+</li>
+<li>
+<p>Fix off-by-one error in schematic pasting</p>
+</li>
+<li>
+<p>Check plot ownership/event before handling Direction.ALL</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plotsquared_v6_0_7">PlotSquared v6.0.7</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Additions:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add option to strip user-defined click events in descriptions/farewells/greetings</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Fixes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fix issue with music flag displaying</p>
+</li>
+<li>
+<p>Fix boats and lilypad breaking on your own plot</p>
+</li>
+<li>
+<p>Fix various issues with projectiles not being removed properly</p>
+</li>
+<li>
+<p>Don&#8217;t affect players in entity change block flag</p>
+</li>
+<li>
+<p>Allow players to evapourate snow on their own plot when on fire</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
