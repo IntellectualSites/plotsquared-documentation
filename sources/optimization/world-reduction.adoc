@@ -1,13 +1,10 @@
 = World reduction
-:sectnums:
-:toc: left
+include::../_header/main-header.txt[]
+:stylesdir: ../_stylesheet
 :toclevels: 2
-:icons: font
-:source-highlighter: coderay
-:source-language: YAML
 
-[descrete]
-===== xref:../README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:../README.adoc[🡄 Return to the index]
 
 With the following features you limit and reduce the size of your plotworld to save performance, memory and prevent an unattractive endless plotworld with many unused world space.
 

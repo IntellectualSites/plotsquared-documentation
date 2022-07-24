@@ -1,11 +1,10 @@
 = worlds.yml
-:toc: left
+include::../_header/main-header.txt[]
+:stylesdir: ../_stylesheet
 :toclevels: 2
-:icons: font
-:source-highlighter: coderay
-:source-language: YAML
 
-===== xref:../README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:../README.adoc[🡄 Return to the index]
 
 == Introduction
 

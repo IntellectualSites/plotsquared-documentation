@@ -1,9 +1,10 @@
 = WorldEdit & FastAsyncWorldEdit features
-:toc: left
+include::./_header/main-header.txt[]
+:stylesdir: ./_stylesheet
 :toclevels:
-:icons: font
 
-===== xref:README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:README.adoc[🡄 Return to the index]
 
 [TIP]
 If you want to make other aspects of WorldEdit async as well, you could consider installing https://www.spigotmc.org/resources/fast-async-worldedit.13932[FasAsyncWorldEdit]. All permissions to allow FAWE in plots, you can find link:https://intellectualsites.github.io/fastasyncworldedit-documentation/basic-commands/main-commands-and-permissions.html[here].

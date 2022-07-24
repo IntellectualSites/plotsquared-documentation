@@ -1,11 +1,10 @@
 = Permission Packs
-:sectnums:
-:toc: left
+include::../_header/main-header.txt[]
+:stylesdir: ../_stylesheet
 :toclevels: 2
-:icons: font
 
-[descrete]
-===== xref:../README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:../README.adoc[🡄 Return to the index]
 
 == Introduction
 

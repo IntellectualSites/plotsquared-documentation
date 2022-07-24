@@ -1,12 +1,10 @@
 = Installation
-:sectnums:
-:toc: left
+include::../_header/main-header.txt[]
+:stylesdir: ../_stylesheet
 :toclevels: 2
-:icons: font
-:source-highlighter: coderay
 
-[descrete]
-===== xref:../README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:../README.adoc[🡄 Return to the index]
 
 == Initial Setup
 

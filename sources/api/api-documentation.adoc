@@ -1,13 +1,12 @@
 = API Documentation
-:sectnums:
-:toc: left
+include::../_header/main-header.txt[]
+:stylesdir: ../_stylesheet
 :toclevels: 3
-:icons: font
-:source-highlighter: coderay
 
 :bomVersion: 1.11
 
-===== xref:../README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:../README.adoc[🡄 Return to the index]
 
 == Maven & Gradle Examples
 

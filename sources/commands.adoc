@@ -1,9 +1,11 @@
 = Commands
-:toc: left
+include::./_header/main-header.txt[]
+:stylesdir: ./_stylesheet
 :toclevels: 2
-:icons: font
 
-===== xref:README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:README.adoc[🡄 Return to the index]
+
 == Introduction
 
 All commands start with `/plot` if not configured else wise.

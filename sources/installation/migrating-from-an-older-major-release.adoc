@@ -1,13 +1,12 @@
 = Migrating from an older major release
-:sectnums:
-:toc: left
+include::../_header/main-header.txt[]
+:stylesdir: ../_stylesheet
 :toclevels: 2
-:icons: font
 
 :materialEnum: https://papermc.io/javadocs/paper/1.18/org/bukkit/Material.html
 
-[descrete]
-===== xref:../README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:../README.adoc[🡄 Return to the index]
 
 == Introduction
 
