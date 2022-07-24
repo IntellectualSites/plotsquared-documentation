@@ -1,0 +1,60 @@
+body {
+    font-family: inherit;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h2, h3, #toctitle, a:hover, a:focus {
+    color: #2397f7;
+}
+
+h2 {
+    font-size: 2.1em;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p {
+    line-height: 1.2;
+}
+
+a {
+    color: #717171;
+}
+
+#toc a {
+    color: #a8a8a8;
+}
+
+#toc a:hover {
+    font-weight: 600;
+    color: #fff;
+}
+
+#toc.toc2 {
+    background: #131313;
+}
+
+.sect1 + .sect1 {
+    border-top: 1px dotted #999;
+}
+
+#_return_to_the_index a {
+    text-decoration: unset;
+}
+
+.literalblock pre, .listingblock > .content > pre {
+  font-size: 0.9em;
+}
+
+.ulist > .title {
+    color: #000;
+    font-style: inherit;
+    font-family: inherit;
+    font-weight: 800;
+}

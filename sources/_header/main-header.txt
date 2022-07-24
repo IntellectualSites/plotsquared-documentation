@@ -1,0 +1,9 @@
+:doctype: article
+:stylesheet: main-stylesheet.css
+:toc: left
+:icons: font
+
+:sectnums:
+
+:source-highlighter: coderay
+:source-language: YAML

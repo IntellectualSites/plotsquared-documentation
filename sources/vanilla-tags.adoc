@@ -1,8 +1,10 @@
 = Vanilla Tags
-:toc: left
+include::./_header/main-header.txt[]
+:stylesdir: ./_stylesheet
 :toclevels: 1
 
-===== xref:README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:README.adoc[🡄 Return to the index]
 
 == What are "Tags" ?
 

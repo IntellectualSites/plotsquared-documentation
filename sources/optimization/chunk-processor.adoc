@@ -1,13 +1,10 @@
 = Chunk processor
-:sectnums:
-:toc: left
+include::../_header/main-header.txt[]
+:stylesdir: ../_stylesheet
 :toclevels: 3
-:icons: font
-:source-highlighter: coderay
-:source-language: YAML
 
-[descrete]
-===== xref:../README.adoc[🏠 Return to the index]
+[discrete]
+===== xref:../README.adoc[🡄 Return to the index]
 
 == Introduction
 
