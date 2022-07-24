@@ -10,14 +10,13 @@ h2, h3, #toctitle, a:hover, a:focus {
     color: #2397f7;
 }
 
-/* optional */
 h2 {
     font-size: 2.1em;
     font-weight: normal;
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 p {
@@ -30,6 +29,11 @@ a {
 
 #toc a {
     color: #a8a8a8;
+}
+
+#toc a:hover {
+    font-weight: 600;
+    color: #fff;
 }
 
 #toc.toc2 {
