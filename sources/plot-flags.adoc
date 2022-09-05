@@ -185,6 +185,8 @@ in the plot even when they aren’t added to the plot. |None
 
 |animal-interact |Set to `true` to allow animals to be interacted with in the plot. |False
 
+|beacon-effects |Set to `false` to disable beacon effects on the plot. |True
+
 |block-burn |Set to `true` to allow blocks to burn within the plot. |False
 
 |block-ignition |Set to `false` to disallow blocks to ignite within the
