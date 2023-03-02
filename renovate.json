@@ -3,7 +3,7 @@
     "config:base",
   ],
   "timezone": "Europe/Berlin",
-  "schedule": ["on the first day of the month"]
+  "schedule": ["on the first day of the month"],
   "labels": ["Renovate"],
   "rebaseWhen": "conflicted"
 }
